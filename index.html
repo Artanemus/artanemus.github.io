@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
     <!-- Bootstrap CSS - jsDelivr -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap Font Icon CSS -->
     <link
@@ -21,6 +27,54 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <title>SwimClubMeet</title>
+
+    <!-- 
+      It was a little hard to read the carousel text and see side buttons.
+      Sometimes the side buttons disappeared in the whiteness.
+      This fixes all of that stuff...
+    -->
+    <style>
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-image: none;
+      }
+    </style>
+    <style>
+      .carousel-control-next-icon:after {
+        content: ">";
+        font-size: 55px;
+        font-weight: bolder;
+        color: tomato;
+      }
+    </style>
+    <style>
+      .carousel-control-prev-icon:after {
+        content: "<";
+        font-size: 55px;
+        font-weight: bolder;
+        color: tomato;
+      }
+    </style>
+
+    <style>
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    </style>
+
+    <!-- background images to various containers use dbelow -->
+
+    <style>
+      .bg_icon_side {
+        background-image: url('img src="images/bg_Icons_SwimSide.png"');
+      }
+    </style>
   </head>
 
   <body>
@@ -29,13 +83,13 @@
       class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
     >
       <!-- top line + icon -->
-      <div class="container">
+      <div class="container d-block">
         <!-- Content here -->
         <a
           href="/"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
         >
-          <h1><span class="fs-4">SwimClubMeet</span></h1>
+          <h1><span class="fs-3">SwimClubMeet</span></h1>
         </a>
       </div>
 
@@ -53,26 +107,39 @@
       </div>
     </header>
 
+    <!-- WHAT IS SWIMCLUBMEET -->
     <div class="container w-75 p-1 mt-4 mb-4 bg-dark text-white">
       <div class="row justify-content-center">
         <div class="col-auto fs-5">What is SwimCubMeet?</div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <p class="w-75">
-          It's an application to manage your swimming club members and organize
-          it's club nights.
-        </p>
-        <p class="w-75">
-          Get events set, nominate swimmers, auto-build heats, record race
-          times, organize marshals and time keepers.
-        </p>
-        <p class="w-75">
-          It does one job, has a clean, simple interface. That's why it easy to
-          use. Perfect for parents and friends who aren't IT experts.
-        </p>
+    <div class="container w-75 p-10">
+      <!-- Background image -->
+      <div
+        class="bg-image"
+        style="
+          background-image: url(images/bg_Icons_SwimSide189x149_48dpi.png);
+          height: auto;
+          /* opacity: 0.2; */
+        "
+      >
+        <div class="container-fluid">
+          <div class="row justify-content-center fs-5">
+            <p class="w-75">
+              It's an application to manage your swimming club members and
+              organize it's club nights.
+            </p>
+            <p class="w-75">
+              Get events set, nominate swimmers, auto-build heats, record race
+              times, organize marshals and time keepers.
+            </p>
+            <p class="w-75">
+              It does one job, has a clean, simple interface. That's why it easy
+              to use. Perfect for parents and friends who aren't IT experts.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -95,6 +162,7 @@
 
       <div class="text-break"></div>
     </div>
+
     <div class="container w-75 p-1 mt-4 mb-4 bg-dark text-white">
       <div class="row justify-content-center">
         <div class="fs-5 col-auto">Just three tabs. It's that simple.</div>
@@ -134,7 +202,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../images/TabSheet1_Clean.png"
+              src="images/TabSheet1_Clean.png"
               class="d-block w-100"
               alt="TabSheet 1"
             />
@@ -145,7 +213,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="../images/TabSheet2_Clean.png"
+              src="images/TabSheet2_Clean.png"
               class="d-block w-100"
               alt="TabSheet 2"
             />
@@ -159,7 +227,7 @@
           </div>
           <div class="carousel-item">
             <img
-              src="../images/TabSheet3_Clean.png"
+              src="images/TabSheet3_Clean.png"
               class="d-block w-100"
               alt="TabSheet 3"
             />
@@ -193,42 +261,89 @@
       </button>
     </div>
 
-
     <div class="container w-75 p-1 mt-4 mb-4 bg-dark text-white">
       <div class="row justify-content-center">
-        <div class="col-auto fs-5">SwimClubMeet is scalable. </div>
+        <div class="col-auto fs-5">SwimClubMeet is scalable.</div>
       </div>
     </div>
-
 
     <div class="container">
       <div class="row justify-content-center">
         <p class="fs-5 col-auto w-75">
-          With the addition of a Wi-Fi router and PCs or
-          touch-pads you can have multi-points from which to nominate.
+          With the addition of a Wi-Fi router and PCs or touch-pads you can have
+          multi-points from which to nominate.
         </p>
         <img
-          src="../images/connectingSCM.png"
+          src="images/ScaleUpConnections.png"
           class="d-block w-75"
-          alt="TabSheet 3"
+          alt="ScaleUp Connections"
         />
-      </div>
-      <div class="row justify-content-center">
-        <p class="fs-5 col-auto w-75">
-          Want to go paperless, use the Marshal and Timekeeper apps.
-        </p>
-      </div>
-      <div class="row justify-content-center">
-        <p class="fs-5 col-auto w-75">
-          How about getting members to self nominate with this kiosk style app.
-        </p>
       </div>
     </div>
 
+    <div class="container w-75 p-1 mt-4 mb-4 bg-dark text-white">
+      <div class="row justify-content-center">
+        <div class="col-auto fs-5">
+          Want to go paperless, use the Marshal and Timekeeper apps.
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <img
+          src="images/SCM_GroupOfIcons.png"
+          class="d-block w-50"
+          alt="ScaleUp Connections"
+        />
+      </div>
+    </div>
+
+
+    </div>
+
+    <div class="container w-75 p-1 mt-4 mb-4 bg-dark text-white">
+      <div class="row justify-content-center">
+        <div class="col-auto fs-5">
+          How about getting members to self nominate with this kiosk style app.
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <img
+          src="images/Nominate_TabSheet2.JPG"
+          class="d-block w-75"
+          alt="ScaleUp Connections"
+        />
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2022 Ambrosia</p>
+        </footer>
+      </div>      
+    </footer>
+
     <!-- Bootstrap JS file Bundle with Popper -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Bootstrap CSS - jsDelivr -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

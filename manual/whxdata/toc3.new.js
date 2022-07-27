@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"BMAC Intro","type":"book","tilePath":"","key":"toc4"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

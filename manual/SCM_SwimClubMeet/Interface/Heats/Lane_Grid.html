@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../..";
+    gCommonRootRelPath = "../../..";
+    gTopicId = "3.1.2.0_8";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/><link rel="stylesheet" type="text/css" href="../../../assets/css/SCM.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="Adobe RoboHelp 2020"/>
+    <title>Lane Grid</title>
+    <meta name="topic-status" content="Draft"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/>
+    <meta name="template" content="../../../assets/masterpages/SCM.htt"/>
+    <meta name="rh-index-keywords" content="table,entrant,outline,laneAssignment,create,new,clear,lanes,racetime,TimeToBeat,personalbest,PB,disqualified,scratched"/>
+  </head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Lane Grid">
+        <span>Lane Grid</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+    <div style="background-color: #f5f5f5">
+      <p><span style="font-size: 26px"></span></p>
+      <table border="1" cellpadding="1" cellspacing="1" style="
+          border-collapse: collapse;
+          width: 100%;
+          border-width: 0px;
+          border-style: none;
+          border-color: #000000;
+          border-left-width: 10px;
+          border-left-style: none;
+          border-left-color: #000000;
+          border-top-width: 10px;
+          border-top-style: none;
+          border-top-color: #000000;
+          border-right-width: 10px;
+          border-right-style: none;
+          border-right-color: #000000;
+          border-bottom-width: 10px;
+          border-bottom-style: none;
+          border-bottom-color: #000000;
+        ">
+        <colgroup>
+          <col style="width: 100%"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="
+                border-width: 0px;
+                border-style: none;
+                border-color: #000000;
+                border-left-width: 0px;
+                border-left-style: none;
+                border-left-color: #000000;
+                border-top-width: 0px;
+                border-top-style: none;
+                border-top-color: #000000;
+                border-right-width: 0px;
+                border-right-style: none;
+                border-right-color: #000000;
+                border-bottom-width: 0px;
+                border-bottom-style: none;
+                border-bottom-color: #000000;
+              ">
+              <span style="font-size: 26px"><img alt="SCM Hero Icon" height="48" src="../../../assets/images/Interface/SCM_Hero_Icon.png" style="padding: 10px; float: left" title="SCm_Hero_Icon" width="48"/>
+              </span>
+              <span style="font-size: NaNpx"><span style="font-size: 26px"><br/>
+                  SwimClubMeet</span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+    <h2 class="scm_h2">Lane Grid</h2>
+
+    <div style="text-align: center">
+      <div style="display: inline-block">
+        <p>
+          This section details the lane grid. It discusses the different
+          functions of the ellipse button. How to manually assign a nominee to a
+          lane. How to nominate and assign an active member to a lane. How to
+          enter race times, disqualifications and scratch a swimmer..
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <div style="display: inline-block">
+        <img class="scm_img" src="../../../assets/images/Entrants/Ent_Grid_Ledger.png" alt="Lane Grid with ledger."/>
+      </div>
+    </div>
+    <div>
+      <table class="scm_table_idx">
+        <caption style="text-align: auto; padding-bottom: 10px">
+          Summary of the columns displayed ...
+        </caption>
+        <colgroup>
+          <col/>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="scm_c1">1. Lane</td>
+            <td class="scm_c2">A read-only field. The pool lane number.</td>
+          </tr>
+          <tr>
+            <td class="scm_c1">2. Entrant&#39;s Name</td>
+            <td class="scm_c2">
+              Here you have access to the ellipse button which allows you to
+              enter a nominee manually into a lane. Prefixed to the name is the
+              swimmers age and gender.
+            </td>
+          </tr>
+          <tr>
+            <td class="scm_c1">3. race time</td>
+            <td class="scm_c2">
+              The swimmers time for the event, given by the Chief Timekeeper.
+            </td>
+          </tr>
+          <tr>
+            <td class="scm_c1">4. TimeToBeat</td>
+            <td class="scm_c2">
+              A read-only field. A predicted race time for the entrant
+              calculated on demand by SCM.
+            </td>
+          </tr>
+          <tr>
+            <td class="scm_c1">5.PersonalBest</td>
+            <td class="scm_c2">
+              A read-only field. The entrant&#39;s Personal Best for this event.
+            </td>
+          </tr>
+          <tr>
+            <td class="scm_c1">6. Lables</td>
+            <td class="scm_c2">
+              S - Indicates if the entrant was scratched. (No show.) 
+              <div style="display: inline-block">D - Indicates if the entrant was disqualified.</div>
+              
+            </td>
+          </tr>
+          <tr>
+            <td class="scm_c1">7. Buttons</td>
+            <td class="scm_c2">Lane Grid Buttons.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- NAVIGATION -->
+    <h3 class="scm_h3"><a id="LG_Navigate"></a>Navigating the lane grid</h3>
+    <p>Selection in the lane grid is cell based.</p>
+    <p>
+      <span class="scm_kbm">TAB </span>and
+      <span class="scm_kbm">SHIFT+TAB</span> are the most efficient way of
+      moving around the grid. <span class="scm_kbm">TAB </span>and
+      <span class="scm_kbm">SHIFT+TAB</span> key will only move to the cells
+      that are editable. Those cells are <span class="scm_term">RaceTime</span>,
+      <span class="scm_term">scratched</span> and
+      <span class="scm_term">disqualified</span>. Pressing
+      <span class="scm_kbm">TAB </span> at the end of a line will move you down
+      to the next lane. Pressing <span class="scm_kbm">SHIFT+TAB </span> at the
+      beginning of a line will move you up a lane.
+    </p>
+    <p>
+      Arrow keys will navigate across all cells. Use
+      <span class="scm_kbm">UP</span>, <span class="scm_kbm">DOWN</span>,
+      <span class="scm_kbm">LEFT</span> and <span class="scm_kbm">RIGHT </span>.
+      Left and right arrow keys don&#39;t navigate off the current lane.
+    </p>
+    <!-- CSS only -->
+    <div class="scm_div_hint">
+      <p>
+        <svg class="bi bi-info-circle" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+        </svg>
+        Info: These arrow keys are a little querky! You&#39;ll notice the left arrow
+        can gets stuck inside time editboxes. They also effect how checkboxes
+        are drawn. A developer&#39;s nightmare. Future releases will improve arrow
+        key performance. 👍
+      </p>
+    </div>
+
+    <!-- POPUP MENU -->
+    <h3 class="scm_h3">Lane grid ... pop-up menu.</h3>
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <p>
+              <img src="../../../assets/images/PopupMenu/PU_Lanes.jpg" style="
+                  float: left;
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  cursor: nwse-resize;
+                "/>
+              Hover over the grid then
+              <span class="scm_kbm">RMouse</span> click to access the context
+              sensitive pop-up menu.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- MOVING ENTRANTS - CHANGING THE LANE ORDER -->
+    <h3 class="scm_h3">Moving Entrants in Lanes</h3>
+
+    <div style="margin-left: 20px">
+      <p>
+        👉 To move the entrant, first select the lane, then use the short cut
+        keys <span class="scm_kbm">CTRL+UP</span> and
+        <span class="scm_kbm">CTRL+DOWN</span>.
+      </p>
+      <p>
+        👉 Or <span class="scm_kbm">RMouse</span> click and use the pop-up menu,
+        then select <span class="scm_mi">Move Up</span> or
+        <span class="scm_mi">Move Down</span> from the menu.
+      </p>
+      <p>
+        👉 Or click either of the
+        <span class="scm_kbm">Move Lane</span> buttons to change the stack
+        order.
+      </p>
+      <p>
+        👉 Or click the <span class="scm_kbm">Swap Lane</span> button. This
+        function can also be found in the pop-up menu. More about the function
+        below.
+      </p>
+    </div>
+
+    <p>
+      Moving entrants may be disabled, it depends on the status of the heat or
+      session.
+    </p>
+    <p>
+      It&#39;s possible to move an entrant into the previous or next heat just by
+      using the short-cut keys or buttons.
+    </p>
+    <p>Note: You can hover over any of the buttons for a helpful hint.</p>
+
+    <!-- RACETIME -->
+    <h3 class="scm_h3"><a id="LG_RaceTime"></a>Grid Column - RaceTime.</h3>
+    <p>
+      It&#39;s in this cell that you enter a swimmer&#39;s time for racing the event.
+    </p>
+    <p>
+      Selecting the cell will auto-matically place it in edit mode with all its
+      contents selected. Just start typing. If you want to use the edit cursor,
+      then press <span class="scm_kbm">ENTER </span>or
+      <span class="scm_kbm">F2 </span>or
+      <span class="scm_kbm">LMOUSE</span> click the cell a second time and the
+      cursor will appear.
+    </p>
+    <p>
+      The <span class="scm_mi">RaceTime</span> cell is special in that it uses a
+      template or editmask. When the cursor is enabled and you are using the
+      arrow keys to navigate you&#39;ll notice that the decimal period and colon
+      characters are skipped over. Only numerical keys are accepted. Only
+      minutes, secounds and milliseconds can be entered. Hours are not
+      considered.
+    </p>
+    <p>
+      Hold down <span class="scm_kbm">SHIFT</span> while using the arrow keys,
+      will select a portion of the time for editing.
+    </p>
+    <p><span class="scm_kbm">DOUBLE LMOUSE</span> click to select all.</p>
+    <p>
+      To zero the time (00:00.000), select all and then press
+      <span class="scm_kbm">BACKSPACE</span> .
+    </p>
+    <p>
+      Press <span class="scm_kbm">ESC</span> to clear what&#39;s been entered and
+      restore the previous known value. This doesn&#39;t exit you from edit mode.
+    </p>
+    <p>
+      To exit edit mode, press
+      <span class="scm_kbm">ENTER, TAB, SHIFT-TAB, ARROW UP, ARROW DOWN</span>.
+      Or <span class="scm_kbm">LMOUSE</span> click outside the cell.
+    </p>
+
+    <p>
+      Entering an invalid time, for example 01:62.20, will be ignored. You can&#39;t
+      have 62 seconds! The race time will revert when you exit edit-mode -
+      ignoring your erronous entry. Note: you aren&#39;t prompted with an error
+      message. Double check your race times.
+    </p>
+    <p>
+      The <span class="scm_term">SCM_Timekeeper</span> application can set a
+      swimmer&#39;s race time remotely.
+    </p>
+    <p>
+      Most human timekeepers aren&#39;t the best at recording 1000ths. The reason
+      SwimClubMeet accepts this precision is to prepare itself for electronic
+      touch-pads. A future addition.
+    </p>
+
+    <!-- CSS only -->
+    <div class="scm_div_hint">
+      <p>
+        <svg class="bi bi-info-circle" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+        </svg>
+        Info: The quickest method to enter a stack of entrant&#39;s race-times is to
+        start at the top. Check that the cell&#39;s contents is all selected...
+      </p>
+      <p>
+        Enter the value, including leading zeros. Remember, only numericals (eg.
+        If you want to enter 31 seconds and 41/100ths, do this, type 003141).
+      </p>
+      <p>Then arrow down. Rinse and repeat.</p>
+    </div>
+
+    <!-- LANE NUMBER -->
+    <h3 class="scm_h3">Grid Column - Lane Number.</h3>
+    <p>
+      A read-only cell. The lane number is auto-assigned and sorted by SCM. The
+      number of lanes that appears in the grid is determined by settings found
+      in the menu bar.
+    </p>
+    <p>
+      <span class="scm_mi">Tools ➡ Options ➡ Club ➡ Number of lanes.</span>
+    </p>
+
+    <!-- TIMETOBEAT     -->
+    <h3 class="scm_h3">
+      <a id="Lane_TimeToBeat"></a>Grid Column - TimeToBeat (TTB).
+    </h3>
+    <p>
+      A read-only cell, calculated by SCM. It&#39;s the most likely time it&#39;ll for
+      the entrant to swim the event. Calculations are based on the members
+      historical data using the algorithym selected in options.
+    </p>
+    <p>
+      Auto-Build Heats uses TimeToBeat to build a list of swimmers, ordered
+      fastest to lowest. Swimmers without a TTB will be placed in the slowest
+      heat. If you would like to know more about how TTB works, then follow this
+      <a href="../../System/TTB_How_it_works.htm">link</a>.
+    </p>
+
+    <!-- PERSONAL BEST -->
+    <h3 class="scm_h3">
+      <a id="Lane_PersonalBest"></a>Grid Column - PersonalBest (PB).
+    </h3>
+    <p>
+      This is a read only calculated field. The Personal Best is an entrants
+      best race time achieved for the event - up to but excluding the current
+      session.
+    </p>
+
+    <!-- DISQUALIFIED   -->
+    <h3 class="scm_h3">
+      <a id="Lane_Disqualified"></a>Grid Colum - Disqualified (D)
+    </h3>
+    <p>
+      If checked this indicates the entrant has been disqualified by the race
+      marshall. The Marshal&#39;s application can set this remotely.
+    </p>
+    <p>
+      Press the <span class="scm_kbm">SPACE</span> key or mouse
+      <span class="scm_kbm">LMOUSE</span> click to toggle.
+    </p>
+
+    <!-- SCRATCHED    -->
+    <h3 class="scm_h3">
+      <a id="Lane_Scratched"></a>Grid Colum - Scratched (S)
+    </h3>
+    <p>
+      If checked this indicates the entrant was scratched from the event. (A
+      no-show.) The Marshal&#39;s application can set this remotely.
+    </p>
+    <p>
+      Press the <span class="scm_kbm">SPACE</span> key or mouse
+      <span class="scm_kbm">LMOUSE</span> click to toggle.
+    </p>
+
+    <!-- SWAP LANES-->
+    <h3 class="scm_h3">Swap Lanes</h3>
+    <p>To open the <span class="scm_term">Swap Lane</span> dialogue.</p>
+    <div style="margin-left: 20px">
+      <p>
+        👉 <span class="scm_kbm">RMouse</span> click and then select from the
+        pop-up menu <span class="scm_mi">Swap Lanes ...</span>.
+      </p>
+      <p>👉 Or click the <span class="scm_kbm">Swap Lane</span> button.</p>
+    </div>
+    <p>
+      It&#39;s not necessary to select the lane prior to opening the dialogue, but
+      it can be helpful as it will auto-fill the dialogue for you.
+    </p>
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img class="scm_img" src="../../../assets/images/Entrants/Ent_SwapLaneDlg.JPG" alt="Swap Lane Dialogue"/>
+            <p>
+              Swimmers can be swapped in the current heat or across any heat
+              that exists in the current selected event. You are permitted to
+              swap empty lanes.
+            </p>
+            <p>Use the arrow icons to alter to the heat and lane number.</p>
+            <p>
+              👉 Click the <span class="scm_kbm">Swap Lane</span> button to
+              complete.
+            </p>
+            <p>
+              👉 Or click <span class="scm_kbm">Cancel</span> button to close
+              without changes.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- EMPTY LANE-->
+    <h3 class="scm_h3">Empty Lane - Clear the Entrant.</h3>
+    <p>
+      Empty lane will clear the swimmer from the lane and return the member to
+      the nomination stack, awaiting lane assignment.
+    </p>
+    <p>
+      The member is no longer an entrant, but remains a nominee for the event.
+    </p>
+    <p>You can perform the action by first selecting the lane and then ...</p>
+    <div style="margin-left: 20px">
+      <p>👉 Use the short cut key <span class="scm_kbm">CTRL+X</span>.</p>
+      <p>
+        👉 Or <span class="scm_kbm">RMouse</span> click and use the pop-up menu,
+        then select <span class="scm_mi">Empty Lane</span> from the menu.
+      </p>
+      <p>👉 Or click the <span class="scm_kbm">Empty Lane</span> button.</p>
+    </div>
+
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img class="scm_img" src="../../../assets/images/Entrants/Ent_EmptyTheLaneDlg.jpg" alt="Empty Lane"/>
+            <p>A confirmation dialogue box will appear.</p>
+            <p>
+              Press <span class="scm_kbm">Yes</span> to complete the process.
+              It&#39;s safe to empty an empty lane.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SCRUB LANE-->
+    <h3 class="scm_h3">
+      Scrub Lane - Strike the Entrant and remove nomination.
+    </h3>
+    <p>
+      <span class="scm_term">Scrub Lane</span> is more thorough. It&#39;ll clears
+      the member from the lane and removes the nomination reference for the
+      current selected event. If the member wishes to compete in the event, the
+      member will have to re-nominate.
+    </p>
+    <p>You can perform the action by first selecting the lane and then ...</p>
+    <div style="margin-left: 20px">
+      <p>👉 Use the short cut key <span class="scm_kbm">CTRL+Del</span>.</p>
+      <p>
+        👉 Or <span class="scm_kbm">RMouse</span> click and use the pop-up menu,
+        then select <span class="scm_mi">Strike Entrant</span> from the menu.
+      </p>
+      <p>👉 Or click the <span class="scm_kbm">Strike Entrant</span> button.</p>
+    </div>
+
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img class="scm_img" src="../../../assets/images/Entrants/Ent_StrikeEntrantDlg.jpg" alt="Empty Lane"/>
+            <p>A confirmation dialogue box will appear.</p>
+            <p>
+              Press <span class="scm_kbm">Yes</span> to complete the process.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+
+</div>
+    <div>
+      <p></p>
+    </div>
+  
+
+</body></html>

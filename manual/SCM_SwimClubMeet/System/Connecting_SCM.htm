@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../..";
+    gCommonRootRelPath = "../..";
+    gTopicId = "3.5.0_3";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="../../assets/css/default.css"/><link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="Adobe RoboHelp 2020"/>
+    <title>Connecting SCM</title>
+    <meta name="topic-status" content="Draft"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/>
+    <meta name="template" content="../../assets/masterpages/SCM.htt"/>
+  </head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Connecting SCM">
+        <span>Connecting SCM</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+    <div style="background-color: #f5f5f5">
+      <p><span style="font-size: 26px"></span></p>
+      <table border="1" cellpadding="1" cellspacing="1" style="
+          border-collapse: collapse;
+          width: 100%;
+          border-width: 0px;
+          border-style: none;
+          border-color: #000000;
+          border-left-width: 10px;
+          border-left-style: none;
+          border-left-color: #000000;
+          border-top-width: 10px;
+          border-top-style: none;
+          border-top-color: #000000;
+          border-right-width: 10px;
+          border-right-style: none;
+          border-right-color: #000000;
+          border-bottom-width: 10px;
+          border-bottom-style: none;
+          border-bottom-color: #000000;
+        ">
+        <colgroup>
+          <col style="width: 100%"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="
+                border-width: 0px;
+                border-style: none;
+                border-color: #000000;
+                border-left-width: 0px;
+                border-left-style: none;
+                border-left-color: #000000;
+                border-top-width: 0px;
+                border-top-style: none;
+                border-top-color: #000000;
+                border-right-width: 0px;
+                border-right-style: none;
+                border-right-color: #000000;
+                border-bottom-width: 0px;
+                border-bottom-style: none;
+                border-bottom-color: #000000;
+              ">
+              <span style="font-size: 26px"><img alt="SCM Hero Icon" height="48" src="../../assets/images/Interface/SCM_Hero_Icon.png" style="padding: 10px; float: left" title="SCm_Hero_Icon" width="48"/>
+              </span>
+              <span style="font-size: NaNpx"><span style="font-size: 26px"><br/>
+                  SwimClubMeet</span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+    <!-- OUTLINE -->
+    <h2 class="scm_h2">Connect TCP/IP for SCM</h2>
+    <p style="margin-left: 6%; margin-right: 6%">
+      <span class="scm_quote">
+        An outline to getting other devices and support applications connected
+        to the SwimClubMeet database.
+      </span>
+    </p>
+    <h2 class="scm_h2">Outline - Step-by-Step</h2>
+    <p>
+      For the computer running the MS SQLEXPRESS database server, the following
+      must be done.
+    </p>
+
+    <!-- OUTLINE STEP-BY-STEP LIST -->
+    <div style="margin-left: 20px">
+      <p>👉 1. Enable TCP/IP for the database server.</p>
+      <p>👉 2. Set a static port number for database server.</p>
+      <p>👉 3. Enable remote logins for the database server.</p>
+      <p>👉 4. Setup a database login.</p>
+      <p>👉 5. Set the PC&#39;s firewall to allows communications on the port.</p>
+      <p>👉 6. Test the connection.</p>
+    </div>
+
+    <p style="margin-left: 6%; margin-right: 6%">
+      <span class="scm_quote">
+        Changing settings will require a restart of the database server, else
+        the changes are ignored.
+      </span>
+    </p>
+
+    <h3 class="scm_h3">On the computer(s) that will be connecting ...</h3>
+    <ul>
+      <li>Prepare PC firewall to allow communications on the assigned port.</li>
+      <li>
+        Remote logins must use IP address and port to connect to the database
+        server.
+      </li>
+      <li>Remote logins must use database server accounts. ie. scmAdmin.</li>
+    </ul>
+
+    <h3 class="scm_h3">Router, Wi-Fi considerations ...</h3>
+    <ul>
+      <li>Ensure port forwarding is enabled for the assigned port.</li>
+      <li>
+        Assign a static or lease a port forever for the router connection that
+        has the database server.
+      </li>
+    </ul>
+
+    <h2 class="scm_h2">Detailed step-by-step guide ...</h2>
+
+    <div style="display: inline-block">
+      <p>
+        <span class="expandtext">This guide assumes you have Windows 10 and are running SQLEXPRESS
+          2017 or 2019.
+        </span>
+      </p>
+      <p>
+        In this example I&#39;m using the
+        <span class="scm_term">SQL Server Configuration Manager</span>. You can
+        also access these settings with the
+        <span class="scm_term">Computer Management</span> panel. You will have
+        to drill down into the tree to find the service. A database restart can
+        also be done from this panel.
+      </p>
+    </div>
+
+    <!-- ENABLE TCP/IP -->
+
+    <h3 class="scm_h3" style="width: 100%">
+      1. Enable TCP for the database server.
+    </h3>
+    <p>
+      Run the
+      <span class="scm_term">SQL Server Configuration Manager</span>
+      application. This application is installed with Microsoft&#39;s SQLEXPRESS. To
+      locate this application use the windows start button and navigate to
+      Microsoft SQL Server folder.
+    </p>
+    <p>
+      If you are having problems finding it then type &#39;SQL Server&#39; in the
+      windows search box (found on the task bar).
+    </p>
+
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_Config_TCPIP_Enable.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+
+            <p>
+              The image shown here is TCP/IP for Protocols for SQLEXPRESS - in
+              the process of being enabled.
+            </p>
+            <div style="display: inline-block">
+              <ul class="scm_ul">
+                <li class="scm_ul">
+                  Ensure <span class="scm_mi">Protocols for SQLEXPRESS</span> is
+                  selected.
+                </li>
+                <li class="scm_ul">
+                  Then select <span class="scm_mi">TCP/IP</span>.
+                </li>
+                <li class="scm_ul">
+                  <span class="scm_kbm">RMOUSE</span> click and select
+                  <span class="scm_mi">Enabled</span> from the popup menu.
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="scm_h3" style="width: 100%">
+      2. Set a static port number for the database server.
+    </h3>
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <!-- SETTING UP PORTS -->
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_Config_TCPIP_Properties.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            Next we have to set the port that the database uses in comumicating
+            with a connection.
+            <p>
+              This image shows how to access the properties of the TCP/IP
+              protocol.
+            </p>
+
+            <div style="display: inline-block">
+              <ul class="scm_ul">
+                <li class="scm_ul">
+                  <span class="scm_mi">Protocols for SQLEXPRESS</span> is
+                  selected.
+                </li>
+                <li class="scm_ul">
+                  Then select <span class="scm_mi">TCP/IP</span>.
+                </li>
+                <li class="scm_ul">
+                  <span class="scm_kbm">RMOUSE</span> click and select
+                  <span class="scm_mi">Properties</span> from the popup menu.
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- PROPERTIES - LISTEN ALL -->
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_PropertiesDlg_Protocol.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            This image displays the properties dialogue. The protocol tab-sheet
+            is selected.
+            <p>👉🏻 Ensure Enable is assigned Yes</p>
+            <p>👉🏻 Ensure Listen All is assigned Yes</p>
+            <p>
+              Please note, this port configuration is fairly lose in security.
+              Once you have everything connected and tested, you might review
+              your port assignments.
+            </p>
+            <p>👉🏻 Select the next tab-sheet, IP Address.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- PROPERTIES - IP ADDRESSS -->
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_PropertiesDlg_IPAddress.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            This image displays the IP Addresses. At the bottom of the list is
+            <span class="scm_mi">IPALL</span>.
+            <p>
+              👉🏻 Ensure <span class="scm_mi">TCP Dynamic Ports</span> is blank.
+            </p>
+            <p>
+              👉🏻 Assign <span class="scm_kbm">1433</span> into
+              <span class="scm_mi">TCP Port</span>. This is SQLEXPRESS default
+              port.
+            </p>
+            <p>
+              👉🏻 Press <span class="scm_kbm">OK</span>, to save your changes.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="scm_h4">Restart the database server.</h4>
+    <!-- RESTART THE DATABASE SERVER -->
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_Config_Restart.PNG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            For these changes to be assigned, a restart is required.
+            <p>This image shows the database server being restarted.</p>
+            <div style="display: inline-block">
+              <ul class="scm_ul">
+                <li class="scm_ul">First select SQL Server Services.</li>
+                <li class="scm_ul">Then select SQL Server (SQLEXPRESS).</li>
+                <li class="scm_ul">
+                  <span class="scm_kbm">RMOUSE</span> click and select
+                  <span class="scm_mi">Restart</span> from the popup menu.
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="scm_h3" style="width: 100%">
+      3. Enable remote logins for the database server..
+    </h3>
+
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_MSSMS_Properties.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            <p>
+              Next step is to get the database server to accept remote logins.
+              Close up any apps and lets move on.
+            </p>
+            <p>Run Microsoft&#39;s SQL Server Management Studio application.</p>
+            <p>
+              After successfully logging in, the next step is to select the
+              server name (top line).
+            </p>
+            <p>
+              Then <span class="scm_kbm">RMOUSE</span> click and select
+              <span class="scm_mi">Properties</span> from the popup menu.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="../../assets/images/Connect/Con_MSSMS_PropSecurity.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            <p>With the Server Properties dialogue open...</p>
+
+            <!-- <div style="display: inline-block"> -->
+            <ul class="scm_ul">
+              <li class="scm_ul">
+                Select the <span class="scm_mi">Security tab</span>.
+              </li>
+              <li class="scm_ul">
+                Then enable the radiobutton
+                <span class="scm_kbm">SQL Server and Windows Authentication mode</span>.
+              </li>
+              <li class="scm_ul">Press <span class="scm_kbm">OK</span>.</li>
+            </ul>
+            <!-- </div>               -->
+            <p>
+              Doing this will enable remote logins using the server&#39;s user
+              accounts. This change won&#39;t come into effect until you have
+              restarted the server.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4 class="scm_h4">Restart the SQLEXPRESS server.</h4>
+    <p>
+      Select the server name (top line). Right mouse, but this time select
+      &#39;Restart&#39; from the popup menu.
+    </p>
+
+    <!-- CREATE USER - LOGIN NAME + PASSWORD -->
+    <h3 class="scm_h3" style="width: 100%">4. Setup a database login.</h3>
+
+    <table class="scm_table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm_tr_img">
+          <td>
+            <img src="../../assets/images/Connect/Con_MSSMS_LoginPassW.JPG" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            <p>
+              When the application SCM_BuildMeAClub ran it created some useful
+              Roles and Schemas within the SwimClubMeet database. These can be
+              used to setup your remote logins.
+            </p>
+            <p>
+              The next task is to create a login. Then assign permissions so
+              that login can work in the SwimClubMeet database
+            </p>
+            <p>
+              Select the Security branch. There are multiply security branches,
+              make sure you have selected the &#39;root&#39; branch&#39;.
+            </p>
+            <p>RMOUSE and select New ➡ Login from the popup menu.</p>
+            <p>Type a login name. Enter password.</p>
+            <p>Next, select User mappings</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      In the generals tab - you&#39;ll note, I&#39;ve disabled &#39;Enforce password
+      policy&#39;. That way I can enter a &#39;short&#39; password.
+    </p>
+    <p>
+      Go do the same - enter a password for your scmAdmin user and then confirm
+      the password by typing it again in the &#39;Confirm password&#39; editbox.
+    </p>
+    <p>
+      Next we&#39;ll check mappings. Select the &#39;User Mappings&#39; tab. Then select
+      SwimClubMeet and confirm the following ...
+    </p>
+    <p>Make sure the following are checked ...</p>
+    <ul class="Disc">
+      <li>db_datareader</li>
+      <li>db_datawriter</li>
+      <li>public (optional)</li>
+      <li>SCM_Administrator</li>
+    </ul>
+    <p>
+      The last one, &#39;SCM_Administrator&#39; allows the user scmAdmin to do select
+      actions or tasks to the SwimClubMeet tables. &#39;SCM_Administrator&#39; is a
+      SQLSERVER &#39;role&#39; definition. Some SCM system tables are in-accessable to
+      scmAdmin. However when running any of the SwimClubMeet application, logged
+      in as scmAdmin, all application functionality is operable. (Later... If
+      you explore in the SwimClubMeet security sub-branch, you&#39;ll notice other
+      SCM &#39;roles&#39;.)
+    </p>
+    <p>
+      One last job. Select the Status tab. Select the radio button &#39;Enabled&#39; for
+      the &#39;Login&#39; option.
+    </p>
+    <p>Press OK</p>
+    <p>
+      And that should do it. It shouldn&#39;t be necessary to do another restart of
+      the database changes. (?)
+    </p>
+    <p>Close down MSSMS.</p>
+
+    <!-- FIREWALL -->
+    <h3 class="scm_h3" style="width: 100%">
+      5. Set the firewall to allows communications on the port. (UDP, TCP)
+    </h3>
+    <p>
+      If you are running a virus protection application, then SQLEXPRESS is
+      firewalled. It cannot send data across the assigned port. You must
+      configure your virus protection application to port forward the assigned
+      port. In both directions, and for both protocols, TCP and UDP.
+    </p>
+    <p>
+      As every virus protection package is different, it&#39;s not possible to do a
+      step-by-step of the configuration procedure. For testing, you might
+      consider disabling your firewall. Then re-enable once the router, remote
+      PCs and database server are all talking.
+    </p>
+
+    <!-- CHECK, DEBUG CONNECTION  -->
+    <h3 class="scm_h3">6. Test the connection.</h3>
+    <p>Disable your firewall.</p>
+    <p>Does the login work locally? Lets test that out.</p>
+    <p>Close all apps. DO A REBOOT, ENSURE EVERTHING IS INITIALISED.</p>
+    <p>Run SwimClubMeet and try this login...</p>
+    <p>localhost\SQLEXPRESS login:scmAdmin pasword:####</p>
+    <p>
+      Did it work? Can you edit, delete, move stuff about? If it&#39;s worked - then
+      your scmAdmin user is up and running.
+    </p>
+    <p>
+      Now we&#39;ll attempt to use the Loop-Back feature to test an IP connection.
+      Disconnect from Wi-Fi. Remove ethernet cable, etc. (Restart PC?) Then try
+      this...
+    </p>
+    <p>IP address of db server - 127.0.0.1,1433 login:scmAdmin pasword:####</p>
+    <p>
+      Note the comma after the IP address, then the static port number 1433. Did
+      it work? This isn&#39;t a solid test for IP connectivity - but it&#39;s a good
+      indicator all is well.
+    </p>
+
+    <h2 class="scm_h2">Router Configuration..</h2>
+    <p><span class="expandtext">Important notes: </span></p>
+    <p>
+      Wi-Fi routers will need &#39;Port Forwarding&#39; enabled for the assigned port,
+      in both direction, for protocols TCP and UDP.
+    </p>
+    <p>
+      Your router acts as DNS and assigns IP adresses to each connection. Most
+      routers have a setting to &#39;lease&#39; a fixed IP address to the same computer
+      on connection. The &#39;lease time&#39; can be hours or &#39;forever&#39;. Consider
+      setting the lease time for computer with the MS SQL server to &#39;forever&#39;.
+      That way the login IP address will always be same.
+    </p>
+    <p>
+      As each router is different, sorry no help session, instead refer to your
+      router&#39;s manual..
+    </p>
+  
+
+</div>
+    <div>
+      <p></p>
+    </div>
+  
+
+</body></html>

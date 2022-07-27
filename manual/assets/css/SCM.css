@@ -1,0 +1,258 @@
+
+/* introduces fira code ... default.css ... and header entry
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&amp;display=swap" rel="stylesheet">    
+
+*/
+
+/* body { 
+  font-family: 'Segoe UI', 'Fira Code'; 
+  font-size: large;
+  background-color: #ffffff;
+
+} */
+
+/* GOOGLE ICONS  style */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+
+h2.scm_h2 {
+  /* font-size: 16pt; */
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f5bd98;
+  background-color: #ff8e77;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 10px 10px 10px;
+  font-family: "Fira Code";
+}
+
+h3.scm_h3 {
+  /* font-size: larger; */
+  line-height: 1;
+  background-color: rgba(180, 180, 0, 0.2);
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+  border-left: 0;
+  border-right: 0;
+  background-size: 0px 0px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 60%;
+  font-family: "Fira Code Light";
+  font-style: italic;
+}
+
+h4.scm_h4 {
+  font-size: 100%;
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  line-height: 1;
+  margin-left: 16px;
+  margin-bottom: 5px;
+  font-family: "Fira Code Light";
+}
+
+span.scm_kbm {
+  color: #000000;
+  text-align: left;
+  /* text-transform: uppercase; */
+  background-color: rgba(255, 66, 79, 0.23);
+  text-decoration: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-style: italic;
+  font-family: "Fira Code";
+}
+
+span.scm_quote {
+  font-style: italic;
+  font-family: "Fira Code";
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  /* font-size: %; */
+  background-color: rgba(180, 180, 0, 0.2);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+span.scm_mi {
+  font-style: italic;
+  font-family: "Fira Code";
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  /* font-size: %; */
+  background-color: rgba(200, 200, 255, 0.35);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+span.scm_term {
+  font-style: italic;
+  font-family: "Fira Code";
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  /* font-size: %; */
+  background-color: rgba(255, 71, 255, 0.19);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+img.scm_img {
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+  text-align: left;
+  /* text-wrap: left; */
+  float: left;
+  margin: 0px 10px 0px 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: "Fira Code";
+}
+
+table.scm_table_idx {
+  font-family: "Fira Code";
+  break-after: always;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+div.scm_div_hint {
+  font-family: "Fira Code Light";
+  color: #323232;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  background-color: rgba(197, 197, 0, 0.13);
+  font-size: 85%;
+}
+
+div.scm_div_note {
+  color: #323232;
+  font-style: italic;
+  font-family: "Fira Code Light";
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgba(175, 170, 0, 0.12);
+  height: 10px;
+  width: 70%;
+}
+
+table.scm_table_img {
+  border-collapse: collapse;
+  width: 90%;
+  border-width: 0px;
+  border-style: none;
+  border-color: rgb(0, 0, 0);
+  font-family: "Segoe UI";
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+tr.scm_tr_img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 60%;
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+}
+
+/* these 2xtable_data styles are for SCM grid descriptions */
+td.scm_c1 {
+  max-width: 25px;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+td.scm_c2 {
+  max-width: 50px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* Used to display NEXT/PREV across top of form */
+
+a.scm_a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: cornflowerblue;
+  padding: 7px 10px;
+  border-radius: 4px;
+  font-size: 19px;
+}
+a.scm_a:hover {
+  background-color: rgba(100, 149, 237, 85%);
+}
+a.scm_a:focus {
+  outline: 3px solid rgb(100, 149, 237 / 50%);
+}
+div.scm_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* CUSTOM FINGER LIST */
+
+ul.scm_ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* Line spacing for list item */
+ul.scm_ul li.scm_ul {
+  margin-bottom: 8px;
+}
+/* Finger pointer */
+ul.scm_ul li.scm_ul:before {
+  content: "👉🏻 ";
+
+}

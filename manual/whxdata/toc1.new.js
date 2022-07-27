@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"snippets SCM","type":"book","tilePath":"","key":"toc2"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

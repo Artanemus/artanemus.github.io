@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Login.","type":"item","tilePath":"","description":"","url":"SCM_SwimClubMeet/Interface/Login/SCM_Login.htm"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

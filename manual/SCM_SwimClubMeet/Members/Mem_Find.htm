@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../..";
+    gCommonRootRelPath = "../..";
+    gTopicId = "3.3.0_4";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="../../assets/css/default.css"/><link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="Adobe RoboHelp 2020"/>
+    <title>Member Find</title>
+    <meta name="topic-status" content="Draft"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/>
+    <meta name="template" content="../../assets/masterpages/SCM.htt"/>
+    <meta name="rh-index-keywords" content="member,goto,find,report,outline,filter,membershiptype,IsActive,Gender,checkboxes,buttons,keyboard-short-cuts"/>
+  </head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Member Find">
+        <span>Member Find</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+    <div style="background-color: #f5f5f5">
+      <p><span style="font-size: 26px"></span></p>
+      <table border="1" cellpadding="1" cellspacing="1" style="
+          border-collapse: collapse;
+          width: 100%;
+          border-width: 0px;
+          border-style: none;
+          border-color: #000000;
+          border-left-width: 10px;
+          border-left-style: none;
+          border-left-color: #000000;
+          border-top-width: 10px;
+          border-top-style: none;
+          border-top-color: #000000;
+          border-right-width: 10px;
+          border-right-style: none;
+          border-right-color: #000000;
+          border-bottom-width: 10px;
+          border-bottom-style: none;
+          border-bottom-color: #000000;
+        ">
+        <colgroup>
+          <col style="width: 100%"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="
+                border-width: 0px;
+                border-style: none;
+                border-color: #000000;
+                border-left-width: 0px;
+                border-left-style: none;
+                border-left-color: #000000;
+                border-top-width: 0px;
+                border-top-style: none;
+                border-top-color: #000000;
+                border-right-width: 0px;
+                border-right-style: none;
+                border-right-color: #000000;
+                border-bottom-width: 0px;
+                border-bottom-style: none;
+                border-bottom-color: #000000;
+              ">
+              <span style="font-size: 26px"><img alt="SCM Hero Icon" height="48" src="../../assets/images/Interface/SCM_Hero_Icon.png" style="padding: 10px; float: left" title="SCm_Hero_Icon" width="48"/>
+              </span>
+              <span style="font-size: NaNpx"><span style="font-size: 26px"><br/>
+                  SwimClubMeet</span>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+    <h2 class="scm_h2">Find Member</h2>
+    <p>
+      Locate a member within the Club&#39;s Membership database, goto that member&#39;s
+      details.
+    </p>
+    <p><img src="../../assets/images/Members/Member_FindDlg.JPG"/></p>
+    <h3 class="scm_h3">Find Member - Filters</h3>
+    <h4 class="scm_h4">Enter member&#39;s name. (*WildCards*)</h4>
+    <p>
+      Enter text to filter the displayed list of members. Type a &#39;Sub-String&#39; of
+      the member&#39;s name. Spaces are ignored.
+    </p>
+    <h4 class="scm_h4">Select Membership Type</h4>
+    <p>
+      Further filter the member listed by selecting a membership type. Use the
+      variant <span class="scm_mi">Show all membership types</span> to clear. The presets found here are created and edited in the <span class="scm_mi">Membership Type</span> dialogue. Which is accessed by going to the <span class="scm_mi">MenuBar</span> and following the bread crumbs <span class="scm_mi">Tools ➡ Member Types ➡ Details</span>.
+    </p>
+    <h4 class="scm_h4">CheckBox - Is-Active</h4>
+    <p>Check to find member&#39;s that are currently participating in the Club.</p>
+    <p>IsActive differs from IsSwimmer.  If a member is made in-active then they are effectively archived. You cannot nominate or make an entrant of an in-active member.</p>
+    <h4 class="scm_h4">CheckBox - Male</h4>
+    <p>
+      Check to find male swimming members. At least one gender type will aways
+      be on.
+    </p>
+    <h4 class="scm_h4">CheckBox - Female</h4>
+    <p>
+      Check to find female swimming members. At least one gender type will aways
+      be on.
+    </p>
+    <h3 class="scm_h3">Find Member - Buttons</h3>
+    <p><span></span></p>
+    <h4 class="scm_h4">Goto Member</h4>
+    <p>
+      If a member is currently selected in the table, then clicking this button
+      will result in the &#39;Find member&#39; dialogue closing and then cue-to the
+      member within the Club&#39;s Membership database. (Identical to a
+      <span class="SCM_Button">double-left-click</span>.)
+    </p>
+    <h4 class="scm_h4">Close</h4>
+    <p>
+      Exit&#39;s from the Find Member dialogue - without performing a cue-to
+      with-in the Club&#39;s Membership database.
+    </p>
+    <h3 class="scm_h3">Other Notes ...</h3>
+    <h4 class="scm_h4">Other Short-Cuts</h4>
+    <p>
+      <span class="scm_kbm">DOUBLE-LMOUSE</span>  click while the mouse cursor is
+      hovering over a member&#39;s record will close the dialogue and cue-to the
+      member within the Club&#39;s Membership database.<span></span>
+    </p>
+    <h4 class="scm_h4">Found:</h4>
+    <p>
+      The number of records currently held in the list, after filtering. To list
+      all member&#39;s, check male and female boxes, un-chech is-active box, set
+      member type to <span class="scm_mi">show all membership types</span> and clear the <span class="scm_mi">member&#39;s name</span>
+      of all text.
+    </p>
+  
+
+</div>
+    <div>
+      <p></p>
+    </div>
+  
+
+</body></html>

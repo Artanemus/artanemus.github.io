@@ -1,0 +1,1 @@
+rh._.exports({"0":[["scm_Center"]],"1":[["\n    "],["\n\n    ","\n      ","\n        ","centeredTextAboveImage.","\n      ","\n    ","\n    ","\n      ","\n        ","\n      ","\n    ","\n    \n  \n\n"]],"2":[["SCM Header level 2."]],"id":"0"})
