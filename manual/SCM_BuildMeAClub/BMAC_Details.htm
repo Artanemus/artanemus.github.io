@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "0_1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="Adobe RoboHelp 2020"/>
+    <title>BMAC_Details</title>
+    <meta name="topic-status" content="Draft"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/scm.css"/>
+    <meta name="template" content="../../assets/masterpages/SCM.htt"/>
+  </head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BMAC_Details">
+        <span>BMAC_Details</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+    <h2 class="scm-h2">SCM_BuildMeAClub - Details.</h2>
+
+    <p>This special tool creates the SwimClubMeet database on SQLEXPRESS.</p>
+
+    <h3 class="scm-h3">I&#39;m a complete noob - what do I do?</h3> 
+    
+  <!-- Uses scm.css list class -->
+  <div style="display: inline-block; margin-left: 20px;">
+    <ul class="scm-ul">
+      <li class="scm-ul">
+        In computer name type localhost\SQLEXPRESS
+      </li>
+      <li class="scm-ul">
+        Check the box OS Authentication.
+      </li>
+      <li class="scm-ul">
+        Press the Login button.
+      </li>
+      <li class="scm-ul">
+        If successfully BMAC will display the button
+      <span class="scm-kbm">Build Me A Club</span>. Click it.
+      </li>
+      <li class="scm-ul">
+        Confirmation dialogue box is displayed. Click OK.
+      </li>
+      <li class="scm-ul">
+        Wait a bit. When the application tells you it&#39;s finished, close it.
+      </li>
+    </ul>
+  </div>
+
+    <p>You now have a SwimClubMeet database.</p>
+
+
+    <h3 class="scm-h3">What it does</h3>    
+    <p>
+      
+    </p>
+    <p>
+      When you press this button it will first make some checks. If the
+      application discovers you already have a SwimClubMeet database on you SQL
+      server, it&#39;ll abort. SCM_BuildMeAClub uses the sqlcmd.exe commandline
+      utility when processing these scripts. SQLcmd.exe is installed by default
+      when use first install SQLEXPRESS. The application will check that you
+      have SQLcmd.exe installed. If it can&#39;t find the utility it will abort.
+    </p>
+    <p>
+      The application has a large number of SQL scripts that it will run on the
+      SQL server. As it runs it will display it&#39;s progress and display
+      information in the application&#39;s text window.
+    </p>
+    <p>
+      It will create the SwimClubMeet database, create all of the tables,
+      procedures and scalar functions. Then it will populate some of the tables
+      with &#39;starter&#39; data. Next it creates users and roles. It will assign
+      permissions for each role on each table.
+    </p>
+    <p>
+      As the SQL server performs it&#39;s given tasks it will log it&#39;s progress to a
+      file created in the user&#39;s document folder. That file is named
+      SCM_BuildMeAClub.log. If the SQL server encounters any errors, it will log
+      the errors to this file.
+    </p>
+    <p>
+      If the command line utility SQLcmd.exe encounters an error, it will log
+      the error to the SCM_BuildMeAClub text windows.
+    </p>
+    <p>Typically the whole build process is over within a minute or two.</p>
+
+  
+
+</body></html>

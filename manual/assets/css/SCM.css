@@ -24,7 +24,7 @@
 
 
 
-h2.scm_h2 {
+h2.scm-h2 {
   /* font-size: 16pt; */
   border-width: 1px;
   border-style: solid;
@@ -36,7 +36,7 @@ h2.scm_h2 {
   font-family: "Fira Code";
 }
 
-h3.scm_h3 {
+h3.scm-h3 {
   /* font-size: larger; */
   line-height: 1;
   background-color: rgba(180, 180, 0, 0.2);
@@ -57,7 +57,7 @@ h3.scm_h3 {
   font-style: italic;
 }
 
-h4.scm_h4 {
+h4.scm-h4 {
   font-size: 100%;
   border-width: 0px;
   border-style: none;
@@ -68,7 +68,7 @@ h4.scm_h4 {
   font-family: "Fira Code Light";
 }
 
-span.scm_kbm {
+span.scm-kbm {
   color: #000000;
   text-align: left;
   /* text-transform: uppercase; */
@@ -80,7 +80,7 @@ span.scm_kbm {
   font-family: "Fira Code";
 }
 
-span.scm_quote {
+span.scm-quote {
   font-style: italic;
   font-family: "Fira Code";
   border-width: 0px;
@@ -92,7 +92,7 @@ span.scm_quote {
   padding-right: 4px;
 }
 
-span.scm_mi {
+span.scm-mi {
   font-style: italic;
   font-family: "Fira Code";
   border-width: 0px;
@@ -104,7 +104,7 @@ span.scm_mi {
   padding-right: 4px;
 }
 
-span.scm_term {
+span.scm-term {
   font-style: italic;
   font-family: "Fira Code";
   border-width: 0px;
@@ -116,7 +116,7 @@ span.scm_term {
   padding-right: 4px;
 }
 
-img.scm_img {
+img.scm-img {
   border-width: 1px;
   border-style: none;
   border-color: #000000;
@@ -131,7 +131,7 @@ img.scm_img {
   font-family: "Fira Code";
 }
 
-table.scm_table_idx {
+table.scm-table_idx {
   font-family: "Fira Code";
   break-after: always;
   border-width: 0px;
@@ -145,7 +145,7 @@ table.scm_table_idx {
   margin-left: 20px;
 }
 
-div.scm_div_hint {
+div.scm-div_hint {
   font-family: "Fira Code Light";
   color: #323232;
   font-style: italic;
@@ -162,7 +162,7 @@ div.scm_div_hint {
   font-size: 85%;
 }
 
-div.scm_div_note {
+div.scm-div_note {
   color: #323232;
   font-style: italic;
   font-family: "Fira Code Light";
@@ -179,7 +179,7 @@ div.scm_div_note {
   width: 70%;
 }
 
-table.scm_table_img {
+table.scm-table_img {
   border-collapse: collapse;
   width: 90%;
   border-width: 0px;
@@ -193,7 +193,7 @@ table.scm_table_img {
   padding-left: 20px;
 }
 
-tr.scm_tr_img {
+tr.scm-tr_img {
   margin-left: 10px;
   margin-right: 10px;
   width: 60%;
@@ -203,7 +203,7 @@ tr.scm_tr_img {
 }
 
 /* these 2xtable_data styles are for SCM grid descriptions */
-td.scm_c1 {
+td.scm-c1 {
   max-width: 25px;
   text-align: right;
   padding-right: 10px;
@@ -211,7 +211,7 @@ td.scm_c1 {
   vertical-align: top;
 }
 
-td.scm_c2 {
+td.scm-c2 {
   max-width: 50px;
   text-align: left;
   padding-left: 10px;
@@ -220,7 +220,7 @@ td.scm_c2 {
 
 /* Used to display NEXT/PREV across top of form */
 
-a.scm_a {
+a.scm-a {
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -229,13 +229,13 @@ a.scm_a {
   border-radius: 4px;
   font-size: 19px;
 }
-a.scm_a:hover {
+a.scm-a:hover {
   background-color: rgba(100, 149, 237, 85%);
 }
-a.scm_a:focus {
+a.scm-a:focus {
   outline: 3px solid rgb(100, 149, 237 / 50%);
 }
-div.scm_flex {
+div.scm-flex {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -243,16 +243,16 @@ div.scm_flex {
 
 /* CUSTOM FINGER LIST */
 
-ul.scm_ul {
+ul.scm-ul {
   list-style-type: none;
   padding: 0;
 }
 /* Line spacing for list item */
-ul.scm_ul li.scm_ul {
+ul.scm-ul li.scm-ul {
   margin-bottom: 8px;
 }
 /* Finger pointer */
-ul.scm_ul li.scm_ul:before {
+ul.scm-ul li.scm-ul:before {
   content: "👉🏻 ";
 
 }

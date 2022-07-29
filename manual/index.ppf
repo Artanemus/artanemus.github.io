@@ -3,7 +3,7 @@
   <contextmap>
     
   </contextmap>
-  <topiclist defaulttopic="SCM_SwimClubMeet\Intro\Home.htm">
+  <topiclist defaulttopic="SCM_SwimClubMeet\Home.htm">
     
     <topic>
       assets\snippets_SCM\SCM_BoilerPlate.html
@@ -26,6 +26,10 @@
     </topic>
     
     <topic>
+      assets\snippets_SCM\SCM_keywords.html
+    </topic>
+    
+    <topic>
       assets\snippets_SCM\SCM_PoolProcedure.html
     </topic>
     
@@ -42,15 +46,19 @@
     </topic>
     
     <topic>
-      SCM_BuildMeAClub\BMAC_Intro\BMAC_Details.htm
+      SCM_BuildMeAClub\BMAC_Details.htm
     </topic>
     
     <topic>
-      SCM_BuildMeAClub\BMAC_Intro\BMAC_Login.htm
+      SCM_BuildMeAClub\BMAC_Home.htm
     </topic>
     
     <topic>
-      SCM_BuildMeAClub\BMAC_Intro\Home.htm
+      SCM_BuildMeAClub\BMAC_Login.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Interface_idx.htm
     </topic>
     
     <topic>
@@ -138,35 +146,7 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Interface_idx.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\BackupYourData.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\Home.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\Installation.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\LearnMore.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\MyFirstClubNight.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\StartHere.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Intro\SysRequirements.htm
+      SCM_SwimClubMeet\Members\Members_idx.htm
     </topic>
     
     <topic>
@@ -203,10 +183,6 @@
     
     <topic>
       SCM_SwimClubMeet\Members\Mem_Report.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Members\Members_idx.htm
     </topic>
     
     <topic>
@@ -262,6 +238,30 @@
     </topic>
     
     <topic>
+      SCM_SwimClubMeet\StartHere\BackupYourData.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\StartHere\Installation.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\StartHere\LearnMore.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\StartHere\MyFirstClubNight.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\StartHere\StartHere.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\StartHere\SysRequirements.htm
+    </topic>
+    
+    <topic>
       SCM_SwimClubMeet\System\Application_List.htm
     </topic>
     
@@ -278,7 +278,15 @@
     </topic>
     
     <topic>
+      SCM_SwimClubMeet\System\Grid_Editing.htm
+    </topic>
+    
+    <topic>
       SCM_SwimClubMeet\System\How_seeding_works.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\HowToUseSearch.htm
     </topic>
     
     <topic>
@@ -349,6 +357,10 @@
       SCM_SwimClubMeet\Tools\Tools_idx.htm
     </topic>
     
+    <topic>
+      SCM_SwimClubMeet\Home.htm
+    </topic>
+    
   </topiclist>
   <filenamemap>
     <filenameentry moniker="wh_languagetype">
@@ -369,7 +381,7 @@
         
     <filenameentry moniker="favicon">
       <filename>
-        C:/Users/Ben/Documents/GitHub/SCM_RoboHelp/PROJECT/contents/assets/images/SCM_Help.ico
+        C:/Users/Ben/Documents/GitHub/SCM_RoboHelp/PROJECT/contents/assets/images/icons/SCM_Help.ico
       </filename>
     </filenameentry>
     

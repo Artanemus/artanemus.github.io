@@ -38,7 +38,7 @@
 
     gRootRelPath = "../../..";
     gCommonRootRelPath = "../../..";
-    gTopicId = "3.1.5.0_2";
+    gTopicId = "1.1.5.0_2";
   
 //]]></script>
 
@@ -50,20 +50,21 @@
   <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css"/>
   <link rel="stylesheet" type="text/css" href="../../../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="generator" content="Adobe RoboHelp 2020"/>
-  <title>Events Grid</title>
-  <meta name="topic-status" content="Draft"/>
-  <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/>
-  <link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/>
 
-  <meta name="template" content="../../assets/masterpages/SCM.htt"/>
-  
-<meta name="rh-index-keywords" content="events,sort,table,create,new,delete,distance,stroke,"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="Adobe RoboHelp 2020"/>
+    <title>Events Grid</title>
+    <meta name="topic-status" content="Draft"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/scm.css"/>
 
-<meta name="search-keywords" content="event, grid, create, delete, move, stroke, distance"/>
+    <meta name="template" content="../../assets/masterpages/SCM.htt"/>
 
-</head>
+    <!-- * keywords -->
+    <meta name="search-keywords" content="event, grid"/>
+    <meta name="rh-index-keywords" content="event, grid, popup, menu, new, delete, move, up, down, expand, description, distance, stroke, view, report"/>
+
+  </head>
 
 <body>
   <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
@@ -82,360 +83,453 @@
 
 
 
+    <!-- EVENT GRID INTRO -->
+    <h2 class="scm-h2">The Event Grid.</h2>
 
-  <h2 class="scm_h2">The Event Grid.</h2>
-
-  <div style="text-align: center">
-    <div style="display: inline-block">
-      <p>Create, enter distance and stroke, order, delete and print reports.</p>
+    <div style="text-align: center">
+      <div style="display: inline-block">
+        <p>
+          Create, enter distance and stroke, order, delete and print reports.
+        </p>
+      </div>
     </div>
-  </div>
-  <div style="text-align: center">
-    <div style="display: inline-block">
-      <img class="scm_img" src="../../../assets/images/Events/Event_Grid_Ledger.JPG" alt="Event Grid Snipit."/>
+    <div style="text-align: center">
+      <div style="display: inline-block">
+        <img class="scm-img" src="../../../assets/images/Events/Event_Grid_Ledger.JPG" alt="Event Grid Snipit."/>
+      </div>
     </div>
-  </div>
 
-  <div>
-    <table class="scm_table_idx">
-      <caption style="text-align: auto;padding-bottom: 10px;">
-        LEDGER DESCRIPTIONS ....
-      </caption>
+    <div>
+      <table class="scm-table_idx">
+        <caption style="text-align: auto; padding-bottom: 10px">
+          LEDGER DESCRIPTIONS ....
+        </caption>
+        <colgroup>
+          <col/>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td class="scm-c1">1. Event Number</td>
+            <td class="scm-c2">Read only. Event number. Auto-assigned.</td>
+          </tr>
+          <tr>
+            <td class="scm-c1">2. Distance</td>
+            <td class="scm-c2">
+              Distance in metres to swim. Enter by keyboard or select from the
+              drop-down combobox.
+            </td>
+          </tr>
+          <tr>
+            <td class="scm-c1">3. Stroke</td>
+            <td class="scm-c2">
+              Swimming stroke. Enter by keyboard or select from the drop-down
+              combobox.
+            </td>
+          </tr>
+          <tr>
+            <td class="scm-c1">4. Event Status</td>
+            <td class="scm-c2">
+              Read only. When checked, it indicates that all heats are finalized
+              (closed).
+            </td>
+          </tr>
+          <tr>
+            <td class="scm-c1">5. Nominees, Entrants.</td>
+            <td class="scm-c2">
+              Both cell are read only.
+              <p>
+                <span class="scm-term">Nominees</span> - The number of members
+                who nominated to for the event.
+              </p>
+              <p>
+                <span class="scm-term">Entrants</span> - The number of nominees
+                who were given a lane. ie. the number of entrants.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="scm-c1">6. Event buttons.</td>
+            <td class="scm-c2">
+              Expand grid, move up, move down, create, delete, print event
+              report.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- POPUP MENU -->
+    <h3 class="scm-h3">Event grid ... pop-up menu.</h3>
+    <div>
+      <table class="scm-table_img">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr class="scm-tr_img">
+            <td>
+              <p>
+                <img src="../../../assets/images/PopupMenu/PU_Events.jpg" style="
+                    float: left;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    cursor: nwse-resize;
+                  "/>
+                Hover over the grid then
+                <span class="scm-kbm">RMouse</span> click to access the context
+                sensitive pop-up menu.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ***************CREATE NEW EVENT -->
+    <h3 class="scm-h3">Create new event</h3>
+
+    <table class="scm-table_img">
       <colgroup>
-        <col/>
         <col/>
       </colgroup>
       <tbody>
-        <tr>
-          <td class="scm_c1">1. Event Number1</td>
-          <td class="scm_c2">Read only. Event number. Auto-assigned.</td>
-        </tr>
-        <tr>
-          <td class="scm_c1">2. Distance</td>
-          <td class="scm_c2">Distance in metres to swim. Enter by keyboard or select from the drop-down combobox.</td>
-        </tr>
-        <tr>
-          <td class="scm_c1">3. Stroke</td>
-          <td class="scm_c2">Swimming stroke. Enter by keyboard or select from the drop-down combobox.</td>
-        </tr>
-        <tr>
-          <td class="scm_c1">4. Event Status</td>
-          <td class="scm_c2">Read only. When checked, it indicates that all heats are finalized (closed).</td>
-        </tr>
-        <tr>
-          <td class="scm_c1">5. Nominees, Entrants.</td>
-          <td class="scm_c2">Both cell are read only. 
-            <p><span class="scm_term">Nominees</span> - The number of members who nominated to for the event.</p>
-            <p><span class="scm_term">Entrants</span> - The number of nominees who were given a lane. ie. the number of entrants.</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="scm_c1">6. Event buttons.</td>
-          <td class="scm_c2">Expand grid, move up, move down, create, delete, print event report.  
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-</div>
-
-  <!-- NAVIGATION OF THE EVENT GRID -->
-  
-
-
-
-  <!-- POPUP MENU -->
-  <h3 class="scm_h3">Event grid ... pop-up menu.</h3>
-  <div>
-    <table class="scm_table_img">
-      <colgroup>
-        <col/>
-      </colgroup>
-      <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
-            <p>
-              <img src="../../../assets/images/PopupMenu/PU_Events.jpg" style="
-                  float: left;
-                  margin-left: 10px;
-                  margin-right: 10px;
-                  cursor: nwse-resize;
-                "/>
-              Hover over the grid then
-              <span class="scm_kbm">RMouse</span> click to access the
-              context sensitive pop-up menu.
-            </p>
+            <img src="./../../../assets/images/icons/ic_fiber_new.png" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            To create a new event
+            <div style="display: inline-block; margin-left: 20px">
+              <ul class="scm-ul">
+                <li class="scm-ul">
+                  Click the <span class="scm-kbm">New Event</span> button
+                </li>
+                <li class="scm-ul">
+                  Hover over the event grid, then
+                  <span class="scm-kbm">RMOUSE</span> click and select
+                  <span class="scm-mi">New Event</span> from the popup menu.
+                </li>
+                <li class="scm-ul">
+                  Or move to the event line and
+                  <span class="scm-kbm">arrow down</span>
+                </li>
+                <li class="scm-ul">
+                  Or move to the last field on the last event and press
+                  <span class="scm-kbm">tab</span>.
+                </li>
+              </ul>
+            </div>
           </td>
         </tr>
       </tbody>
     </table>
-  </div>
-  
-<h3 class="scm_h3">
-<a id="Ev_Create"></a>Create new event</h3>
 
+    <p>
+      As new events are inserted, they are auto-matically assigned an event
+      number.
+    </p>
 
+    <!-- DELETE EVENT -->
+    <h3 class="scm-h3">Delete an event.</h3>
+    <table class="scm-table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm-tr_img">
+          <td>
+            <img src="../../../assets/images/icons/ic_delete.png" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            To Delete an Event...
+            <div style="display: inline-block; margin-left: 20px">
+              <ul class="scm-ul">
+                <li class="scm-ul">
+                  Select the event to delete. Click the
+                  <span class="scm-kbm">Delete Event</span> button
+                </li>
+                <li class="scm-ul">
+                  Hover over the event grid, then
+                  <span class="scm-kbm">RMOUSE</span> click and select
+                  <span class="scm-mi">Delete Event</span> from the popup menu.
+                </li>
+                <li class="scm-ul">
+                  Select the event to delete. then press
+                  <span class="scm-kbm">CTRL-DELETE</span>.
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      In all these methods, a dialogue will be shown to confirm the deletion.
+      WARNING: There is no undo.
+    </p>
+    <p>
+      If the heats contained in the event are
+      <span class="scm-quote">closed</span> or
+      <span class="scm-quote">raced </span>, you cannot delete the event.
+    </p>
+    <p>If the session is locked, then you can&#39;t delete events.</p>
+    <p>
+      Note: When an event is deleted, entrants, racetimes, nomination data and
+      heats for that event is removed.
+    </p>
+
+    <!-- MOVE EVENT -->
+    <h3 class="scm-h3">Move events</h3>
+
+    <table class="scm-table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm-tr_img">
+          <td>
+            <img class="scm-img" src="../../../assets/images/icons/ic_keyboard_arrow_up.png"/>
+            <img class="scm-img" src="../../../assets/images/icons/ic_keyboard_arrow_down.png"/>
+
+            Events can be re-ordered by using the ... ********Uses scm.css list
+            class
+            <div style="display: inline-block; margin-left: 20px">
+              <ul class="scm-ul">
+                <li class="scm-ul">
+                  <span class="scm-kbm">CTRL-UP-ARROW</span> and
+                  <span class="scm-kbm">CTRL-DOWN-ARROW</span>.
+                </li>
+                <li class="scm-ul">
+                  Or
+                  <span class="scm-kbm">right-mouse click</span> to use the
+                  context sensitive popup menu and select either
+                  <span class="scm-mi">Move-Up</span>
+                </li>
+                <li class="scm-ul">
+                  or
+                  <span class="scm-mi">Move-Down</span>.
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      As events are moved up or down, they are automatically re-assigned a new
+      event number.
+    </p>
+
+    <!-- GRID EXPANDER -->
+    <h3 class="scm-h3">Expand the events table.</h3>
+    <table class="scm-table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm-tr_img">
+          <td>
+            <img src="../../../assets/images/icons/ic_action_grid_on.png" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            Press this button to toggle the expansion of the event&#39;s table. When
+            expanded, additional event fields are available.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      <span class="scm-quote">Note: on future versions of SCM, the event type field will be
+        available. In this field you can select between individual and team
+        events.</span>
+    </p>
+
+    <!-- More About the Description Field -->
+    <h3 class="scm-h3">Grid Column - Event Description.</h3>
+    <p>This column is only visible when the events grid is expanded.</p>
+
+    <p>
+      <img src="../../../assets/images/Events/Event_GridExpand_Ledger.JPG" style="width: 100%; max-width: 600px"/>
+    </p>
+
+    <p>
+      Descriptions placed in this column are displayed in dialogues, reports,
+      and in the support application Nominate, Marshall, TimeKeeper, etc. They
+      are displayed everywhere.
+    </p>
+
+    <p>Why the description column?</p>
+
+    <p>
+      Normally, event descriptions are not needed. But if you are running
+      identical events, then this column is required. For example, you have
+      2x50M Freestyle events. One for boys under 14 years and one for girls
+      under 14 years. You&#39;ll need to describe these events, else caous.
+    </p>
+
+    <p>
+      SCM can be told to place an auto description, each time you create a new
+      event. The text used can be found in the
+      <span class="scm-mi">Tools ➡ Options ➡ System ➡ Event_Grid</span>. You can
+      modify this text.
+    </p>
+
+    <p>
+      <span class="scm-quote">
+        Note: on future versions of SCM, you&#39;ll be able to use meta-data to
+        customize the descriptions based on the event type. (wit.
+        auto-descriptions will be a little more useful.)
+      </span>
+    </p>
+
+    <p>
+      When SCM creates finals, semi-finals and quarter-finals, it will write an
+      auto-description. SCM adds these descriptions so the special events are
+      delineated from the seed event.
+    </p>
+
+    <!-- GRID COLOUMN DISTANCE -->
+    <h3 class="scm-h3">Grid column - Distance.</h3>
+    <table class="scm-table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm-tr_img">
+          <td>
+            <img src="../../../assets/images/Events/Event_CB_Distance_Ledger.jpg" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            SCM&#39;s default distances are 25m, 50m, 100m, 200m, 400m, 1000m.
+            Distances are not arbitrary, they can be changed or added too in the
+            SCM MSSQL database using SSMS.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>How to edit distance.</p>
+
+    <!-- *************Uses scm.css list class -->
+    <div style="display: inline-block; margin-left: 20px">
+      <ul class="scm-ul">
+        <li class="scm-ul">
+          Using mouse. LMOUSE click the column. LMOUSE click the drop-down
+          combobox widget. Then LMOUSE click the distance in the stack.
+        </li>
+        <li class="scm-ul">
+          Using keyboard. Navigate to the column using ARROW keys or TAB. Press
+          <span class="scm-kbm">F2</span> to enter edit mode. Select the
+          distance using the short-cut keys <span class="scm-kbm">0, 1, 2, 4, 5</span> keys. Finally press
+          <span class="scm-kbm">ENTER</span>. Note: there is no short-cut key for 1000m.
+        </li>
+      </ul>
+    </div>
+
+    <!-- **********GRID COLUMN - STROKE -->
+
+    <h3 class="scm-h3">Grid Column - Stroke</h3>
+
+    <table class="scm-table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm-tr_img">
+          <td>
+            <img src="../../../assets/images/events/Event_CB_Stroke_Ledger.jpg" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            SCM&#39;s default strokes are Freestyle, Breaststroke, Backstroke and
+            Butterfly. Swimming strokes are not arbitrary, they can be changed or
+            added too in the SCM MSSQL database using SSMS.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>How to editing stroke.</p>
+
+    <!-- Uses scm.css list class -->
+
+    <div style="display: inline-block; margin-left: 20px">
+      <ul class="scm-ul">
+        <li class="scm-ul">
+          Using mouse. <span class="scm-kbm">LMOUSE</span> click the column.
+          <span class="scm-kbm">LMOUSE</span> click the drop-down combobox
+          widget. Then <span class="scm-kbm">LMOUSE</span> click the stroke in
+          the stack.
+        </li>
+        <li class="scm-ul">
+          Using keyboard. Navigate to the column using ARROW keys or TAB. Press
+          <span class="scm-kbm">F2</span> to enter edit mode. Select the
+          distance using the short-cut keys
+          <span class="scm-kbm">f, r, a, u, m</span>. Finally press <span class="scm-kbm">ENTER</span>.
+        </li>
+      </ul>
+    </div>
+
+    <!-- VIEW REPORT -->
+
+    <h3 class="scm-h3">View the Event Report.</h3>
+    <table class="scm-table_img">
+      <colgroup>
+        <col/>
+      </colgroup>
+      <tbody>
+        <tr class="scm-tr_img">
+          <td>
+            <img src="../../../assets/images/icons/ic_credit_card.png" style="
+                float: left;
+                margin-left: 10px;
+                margin-right: 10px;
+                cursor: nwse-resize;
+              "/>
+            To see a Event report...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div style="margin-left: 20px">
+      <p>
+        👉 <span class="scm-kbm">LMOUSE</span> click the
+        <span class="scm-mi">Display a event report</span> button. Using a
+        <span class="scm-kbm">CNTRL+LMOUSE</span> click will display the
+        alternative version of the event report.
+      </p>
+      <p>
+        👉 Or hover over the event grid and
+        <span class="scm-kbm">RMOUSE</span> click. The popUp menu will appear,
+        select <span class="scm-mi">Event Report*</span>. As above,
+        <span class="scm-kbm">CNTRL+LMOUSE</span> on the menu item was produce
+        the alternative version of the report.
+      </p>
+    </div>
+
+    <p>
+      To see some examples of the session report, follow this
+      <a href="../../Reports/Rpt_Events.htm">link</a>.
+    </p>
   
-<p>To create a new event 
-<span class="scm_kbm">Click </span>the button to create a new event.</p>
-  
-<p>Or move to the last line and 
-<span class="scm_kbm">arrow down</span>
-<span> </span>or move to the last field on the last line and press 
-<span class="scm_kbm">tab</span>.
-<span> Or </span>
-<span class="scm_kbm">right-mouse click</span> and select 
-<span class="scm_mi">New Event</span> from the popup menu. 
-<span> As new events are inserted, they are auto-matically assigned an event number.</span></p>
-  
-<h4>
-<img class="scm_img" src="../../../assets/images/ic_delete.png"/>
-<a id="Delete_Event"></a>Delete an event</h4>
-  
-<p>Click the button to delete the selected event.Or press 
-<span class="scm_kbm">CTRL-DELETE</span>. A dialogue will dispay asking you to confirm deletion. There is no undo.</p>
-  
-<p>If an event you wish to delete contains raced heats (it&#39;s probably has race times - that&#39;s important data) then you will be prompted again. One last chance.</p>
-  
-<p>If an event contains closed heats then the delete button will be grayed. You can&#39;t delete an event with closed heats.</p>
-  
-<p>When you delete an event, all heat, entrant and nomination data is lost.</p>
-  
-<p>
-<span class="scm_quote">TODO: the checkmark doesn&#39;t paint it&#39;s color correctly when heats are closed.</span></p>
-  
-<h4>
-<img class="scm_img" src="../../../assets/images/ic_keyboard_arrow_up.png"/>
-<img class="scm_img" src="../../../assets/images/ic_keyboard_arrow_down.png"/>
-<a id="Move_Events"></a>Move events</h4>
-  
-<p>Events can be sorted by using 
-<span class="scm_kbm">CTRL-UP-ARROW</span> and 
-<span class="scm_kbm">CTRL-DOWN-ARROW</span>. Or 
-<span class="scm_kbm">right-mouse click</span> to use the context sensitive popup menu and select either 
-<span class="scm_mi">Move-Up</span> or 
-<span class="scm_mi">Move-Down</span>.</p>
-  
-<p>As events are moved up or down, they are auto-matically re-assigned a new event number. </p>
-  
-<h4>
-<img class="scm_img" src="../../../assets/images/ic_action_grid_on.png"/>
-<a id="Expand_Events_Table"></a>Expand the events table.</h4>
-  
-<p>Press this button to toggle the expansion of the event&#39;s table. When expanded, additional event fields are available.</p>
-  
-<p>
-<span class="scm_quote">Note: on future versions of SCM, the event type field will be available. In this field you can select between individual and team events.</span></p>
-  
-<p>
-<img src="../../../assets/images/EventTable_Snipit_Expanded.JPG"/></p>
-  
-<h3 class="scm_h3">
-<a id="Event_Description"></a>Event Description Field</h3>
-  
-<p>This column is only visible when the events table is expanded.</p>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">An event d
-<span style="border-color:#000000;border-style:none;border-width:1px">escription is </span>optional. To enter a short description, select the CELL by 
-<span class="scm_kbm">mouse click</span> or 
-<span class="scm_kbm">tab
-<font color="#000000">
-        
-<font size="3">
-<span style="font-style:normal">
-<span style="font-weight:400">
-<span style="text-transform:none"> </span></span></span></font>
-      </font></span>
-    
-<font color="#000000">
-      
-<font size="3">
-<span style="font-style:normal">
-<span style="font-weight:400">
-<span style="text-transform:none">or</span></span></span></font>
-    </font>
-<span class="scm_kbm">
-      
-<font color="#000000">
-        
-<font size="3">
-<span style="font-style:normal">
-<span style="font-weight:400">
-<span style="text-transform:none"> </span></span></span></font>
-      </font>arrow keys
-    </span>. 
-<span class="scm_kbm">Click </span>again to enter edit mode. Or use the keyboard short-cut 
-<span class="scm_kbm">F2 </span>or press 
-<span class="scm_kbm">enter</span>.  .
-  </p>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">When creating finals, semi-finals and quater-finals, SCM will write an auto-description. SCM adds this description so the &#39;final&#39; is delineated from the seed event. Auto descriptions can be edited..</p>
-  
-<p>Descriptions placed in this column are displayed in reports, the nominate, marshall and timekeeper apps and other dialogues. </p>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">Why the description field? </p>
-  
-<table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;border-width:0px;border-style:none;border-color:#000000" width="100%">
-    
-<colgroup>
-      
-<col width="50%"/>
-      
-<col width="50%"/>
-    </colgroup>
-    
-<tbody style="border-width: 0px;border-style: none;border-color: #000000">
-      
-<tr style="border-width: 1px;border-style: none;border-color: #000000;text-align: left">
-        
-<td style="border-width: 0px;border-style: none;border-color: #000000;text-align: left">
-<img align="left" class="scm_img" src="../../../assets/images/EventTable_Snipit_C.JPG" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0); margin-left: 0px; float: right;"/></td>
-        
-<td style="border-width: 0px;border-style: none;border-color: #000000;float: left">It&#39;s easy to seperate genders using the auto-build heats options.</td>
-      </tr>
-      
-<tr>
-        
-<td style="border-width: 0px;border-style: none;border-color: #000000;text-align: center">
-<img align="left" class="scm_img" src="../../../assets/images/EventTable_Snipit_A.JPG" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0); float: right;"/></td>
-        
-<td style="border-width: 1px;border-style: none;border-color: #000000;float: left">
-          
-<p style="border-width: 1px;border-style: none;border-color: #000000">But if you would like to see seperate boys and girls events clearly 
-<span style="border-color:#000000;border-style:none;border-width:1px">outlined in the meet&#39;s program</span>.</p>
-          
-<p>
-<span style="border-color:#000000;border-style:none;border-width:1px">Toggle</span> expanded mode and enter a description.</p>
-          
-<p> </p>
-        </td>
-      </tr>
-      
-<tr>
-        
-<td style="border-width: 0px;border-style: none;border-color: #000000;text-align: center">
-<img align="left" class="scm_img" height="103" src="../../../assets/images/EventTable_Snipit_B.JPG" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0); float: right;" width="461"/></td>
-        
-<td style="border-width: 1px;border-style: none;border-color: rgb(0, 0, 0);float: left">Be aware, in the un-expanded view, these events will appear identical.
-<br/><br/>
-          
-<br/><br/>
-          
-<span style="border-color:#000000;border-style:none;border-width:1px">But in reports and other views these identical distance/stroke events will be clearly delineated.</span></td>
-      </tr>
-    </tbody>
-  </table>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">
-<span class="scm_quote">The Marshal, Timekeeper and Nominate support apps also display these event descriptions.</span></p>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">Below is a snippet of an event report, showing event descriptions.</p>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">
-<span style="border-color:#000000;border-style:none;border-width:1px"></span>
-<img align="left" src="../../../assets/images/EventTable_Snipit_D.JPG" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"/></p>
-  
-<p> </p>
-  
-<p> </p>
-  
-<p> </p>
-  
-<p> </p>
-  
-<p> </p>
-  
-<p> </p>
-  
-<h3 class="scm_h3">
-<a id="Event_Distance" style="border-width: 1px;border-style: none;border-color: #000000"></a>Distance</h3>
-  
-<p>
-<img class="scm_img" src="../../../assets/images/Event_Distance_ComboBox.jpg"/>SCM&#39;s default distances are 25m, 50m, 100m, 200m, 400m, 1000m. Distances are not arbetory, they can be changed or added too in the SCM MSSQL database using SSMS.</p>
-  
-<h4>Edit distance. </h4>
-  
-<p style="border-width: 1px;border-style: none;border-color: #000000">Navigate by mouse or use 
-<span class="SCM_Button">
-<span class="scm_kbm">tab
-<font color="#000000" size="3">
-<span style="font-style: normal; font-weight: 400; text-transform: none;"> or </span></font></span></span>
-<span class="SCM_Button">
-<span class="scm_kbm">arrow keys</span></span> and select the CELL. 
-<span class="scm_kbm">Click </span>again to enter edit mode. Or use the keyboard short-cut 
-<span class="scm_kbm">F2 </span>or press 
-<span class="scm_kbm">enter</span>.  </p>
-  
-<p>When in edit mode, enter the distance. Or use the drop-down combo box to select the distance.</p>
-  
-<p>
-<span class="scm_quote">Note: Should you wish to type the distance, SCM&#39;s Auto-type will assist your entry.</span></p>
-  
-<h3 class="scm_h3">
-<a id="Event_Stroke"></a>Stroke</h3>
-  
-<p>
-<img class="scm_img" src="../../../assets/images/Event_Stroke_ComboBox.jpg"/>SCM&#39;s default strokes are Freestyle, Breaststroke, Backstroke and Butterfly. Swimming strokes are not arbetory, they can be changed or added too in the SCM MSSQL database using SSMS.</p>
-  
-<h4>Edit stroke.</h4>
-  
-<p>
-<span class="scm_kbm"></span>
-<span class="scm_kbm">Click </span>or navigate by the 
-<span class="scm_kbm">tab
-<font color="#000000"> </font></span>
-    
-<font color="#000000">
-      
-<font size="3">
-<span style="font-style:normal">
-<span style="font-weight:400">
-<span style="text-transform:none">or</span></span></span></font> 
-    </font>
-<span class="scm_kbm">arrow keys</span> and select the CELL. 
-<span class="scm_kbm">Click </span>again to enter edit mode. Or use the keyboard short-cut 
-<span class="scm_kbm">F2 </span>or press 
-<span class="scm_kbm">enter</span>. 
-<span class="scm_kbm"></span>
-  </p>
-  
-<p>When in edit mode, enter the stroke. Or use the drop-down combo box to select the distance.</p>
-  
-<p>
-<span class="scm_quote">Note: Should you wish to type the stroke, SCM&#39;s Auto-type will assist your entry.</span></p>
-  
-<h3 class="scm_h3">
-<a id="Event_Reports"></a>Event Reports</h3>
-  
-<p>
-<img class="scm_img" src="../../../assets/images/ic_credit_card.png"/>
-<span class="scm_kbm">Click </span>the report button to see an event report.</p>
-  
-<p>
-<span class="scm_kbm">Cntrl-click</span> for an alternative event report.</p>
-  
-<p>You can also 
-<span class="scm_kbm">right-mouse click</span> for the popup menu and select &#39;Event Rpt*&#39;. Holding CNTRL while using the popup menu will select the alternative report.</p>
-  
-<p>For some examples of event reports ... 
-<a href="Session.htm#Event_Report_Examples"> 
-<img src="../../../assets/images/ic_action_link.png"/></a></p>
-  
-<h3 class="scm_h3">
-<a id="Event_Popup_Menu"></a>Event&#39;s Popup Menu</h3>
-  
-<p>
-<span class="scm_kbm">
-<img class="scm_img" src="../../../assets/images/Event_PopupMenu.jpg"/>Right-mouse click</span> when positioned over the event table to see the context sensitive pop-up menu.</p>
-  
-<p>Move Up - move the event up
-<br/><br/>
-    Move Down - move the event down
-<br/><br/>
-    Renumber Events - depreciated. 
-<br/><br/>
-    New Event - create a new event. The new event is appended to the end of the table
-<br/><br/>
-    Event Report* - View an event report. Hold down Cntrl to view an alternative event report.</p>
 
 </body></html>

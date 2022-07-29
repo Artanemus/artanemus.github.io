@@ -38,7 +38,7 @@
 
     gRootRelPath = "../../..";
     gCommonRootRelPath = "../../..";
-    gTopicId = "3.1.5.0_5";
+    gTopicId = "1.1.5.0_5";
   
 //]]></script>
 
@@ -50,7 +50,7 @@
   <link rel="stylesheet" type="text/css" href="../../../template/styles/topic.min.css"/>
   <link rel="stylesheet" type="text/css" href="../../../template/Charcoal_Grey/topicheader.css"/>
   <meta name="topic-status" content="Draft"/>
-<link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/><link rel="stylesheet" type="text/css" href="../../../assets/css/SCM.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+<link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/><link rel="stylesheet" type="text/css" href="../../../assets/css/scm.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;display=swap"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
     <meta name="generator" content="Adobe RoboHelp 2020"/>
@@ -60,11 +60,15 @@
     <meta name="topic-status" content="Draft"/>
 
     <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/css/SCM.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/scm.css"/>
 
     <meta name="template" content="../../../assets/masterpages/SCM.htt"/>
 
-    <meta name="rh-index-keywords" content="session,table,create,new,edit,delete,status,sort, clone"/>
+    <!-- * keywords -->
+    <meta name="search-keywords" content="session, grid"/>
+    <meta name="rh-index-keywords" content="session, grid, new, popup, menu, dialogue, edit, delete, lock, toggle, visibility, view, report"/>
+
+
   </head>
 
 <body>
@@ -138,7 +142,7 @@
       </table>
     </div>
     <div>
-    <h2 class="scm_h2"><a id="Session_Grid"></a>Session Grid</h2>
+    <h2 class="scm-h2"><a id="Session_Grid"></a>Session Grid</h2>
 
     <div style="text-align: center">
       <div style="display: inline-block">
@@ -147,14 +151,14 @@
     </div>
     <div style="text-align: center">
       <div style="display: inline-block">
-        <img class="scm_img" src="../../../assets/images/Session/Session_Grid_Clean.jpg" alt="Session Grid - TabSheet 1."/>
+        <img class="scm-img" src="../../../assets/images/Session/Session_Grid_Clean.jpg" alt="Session Grid - TabSheet 1."/>
       </div>
     </div>
 
     <div>
-      <table class="scm_table_idx">
+      <table class="scm-table_idx">
         <caption style="text-align: auto; padding-bottom: 10px">
-          COLUMN DESCRIPTION  ...
+          COLUMN DESCRIPTION ...
         </caption>
         <colgroup>
           <col/>
@@ -162,14 +166,14 @@
         </colgroup>
         <tbody>
           <tr>
-            <td class="scm_c1">Session Date</td>
-            <td class="scm_c2">
+            <td class="scm-c1">Session Date</td>
+            <td class="scm-c2">
               The date and time for the Club-Night. This cell can be edited.
             </td>
           </tr>
           <tr>
-            <td class="scm_c1">Description</td>
-            <td class="scm_c2">
+            <td class="scm-c1">Description</td>
+            <td class="scm-c2">
               A text field to enter a short comment. This cell can be edited.
             </td>
           </tr>
@@ -178,16 +182,14 @@
     </div>
 
     <!-- CREATE NEW SESSION -->
-    <h3 class="scm_h3">
-      <a id="sess_New"></a>Create a new session.
-    </h3>
+    <h3 class="scm-h3"><a id="sess_New"></a>Create a new session.</h3>
 
-    <table class="scm_table_img">
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/icons/ic_fiber_new.png" style="
                 float: left;
@@ -199,29 +201,29 @@
 
             <div style="margin-left: 20px">
               <p>
-                👉 <span class="scm_kbm">LMOUSE</span> click the
-                <span class="scm_mi">New Session</span> button. The new session
+                👉 <span class="scm-kbm">LMOUSE</span> click the
+                <span class="scm-mi">New Session</span> button. The new session
                 dialogue opens.
               </p>
               <p>
                 👉 or hover over the session grid and
-                <span class="scm_kbm">RMOUSE</span> click. The context sensitive
+                <span class="scm-kbm">RMOUSE</span> click. The context sensitive
                 popup menu will appear. Select
-                <span class="scm_mi">New Session</span>. The new session
+                <span class="scm-mi">New Session</span>. The new session
                 dialogue opens.
               </p>
               <p>
-                👉 or press <span class="scm_kbm">CNTRL-INS</span>. The new
+                👉 or press <span class="scm-kbm">CNTRL-INS</span>. The new
                 session dialogue opens.
               </p>
               <p>
                 👉 or move to the last line and
-                <span class="scm_kbm">ARROW DOWN</span>. A new session record
+                <span class="scm-kbm">ARROW DOWN</span>. A new session record
                 appears in the grid, ready for you to edit.
               </p>
               <p>
                 👉 or move to the last cell on the last line and press
-                <span class="scm_kbm">TAB</span>. A new session record appears
+                <span class="scm-kbm">TAB</span>. A new session record appears
                 in the grid, ready for you to edit.
               </p>
               <p>
@@ -230,7 +232,7 @@
                 easier and illegal dates are averted. You may also need to
                 re-sort the grid if you use the in-line editor. If a re-sort is
                 needed then click the
-                <span class="scm_kbm">Refresh</span> button.
+                <span class="scm-kbm">Refresh</span> button.
               </p>
               <p>
                 As new sessions are added they are sorted based on date. The
@@ -243,13 +245,13 @@
     </table>
 
     <!-- POPUP MENU -->
-    <h3 class="scm_h3"><a id="sess_PopUp"></a>Session Pop-up Menu.</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3"><a id="sess_PopUp"></a>Session Pop-up Menu.</h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/PopupMenu/PU_Session.jpg" style="
                 float: left;
@@ -258,7 +260,7 @@
                 cursor: nwse-resize;
               "/>
             Hover over the session grid, then
-            <span class="scm_kbm">RMOUSE</span> click to open the context
+            <span class="scm-kbm">RMOUSE</span> click to open the context
             sensitive pop-up menu.
           </td>
         </tr>
@@ -266,14 +268,14 @@
     </table>
 
     <!-- NEW SESSION DIALOGUE -->
-    <h3 class="scm_h3"><a id="sess_NewDLG"></a>New Session Dialogue</h3>
+    <h3 class="scm-h3"><a id="sess_NewDLG"></a>New Session Dialogue</h3>
 
-    <table class="scm_table_img">
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/Session/Session_CreateDlg.jpg" style="
                 float: left;
@@ -294,7 +296,7 @@
     </table>
 
     <!-- EDITING WITHIN THE GRID -->
-    <h3 class="scm_h3"><a id="sess_EditGrid"></a>Editing within the grid.</h3>
+    <h3 class="scm-h3"><a id="sess_EditGrid"></a>Editing within the grid.</h3>
     <p>
       If you are not using the session dialogue (recommended) and are instead
       editing directly into the grid, here are some helpful tips.
@@ -306,11 +308,11 @@
     <div style="margin-left: 20px">
       <p>
         👉 Have focus on the cell and then press
-        <span class="scm_kbm">F2</span> or <span class="scm_kbm">ENTER</span>.
+        <span class="scm-kbm">F2</span> or <span class="scm-kbm">ENTER</span>.
       </p>
       <p>
-        👉 <span class="scm_kbm">LMOUSE</span> the cell to focus on cell, then
-        <span class="scm_kbm">LMOUSE</span> again.
+        👉 <span class="scm-kbm">LMOUSE</span> the cell to focus on cell, then
+        <span class="scm-kbm">LMOUSE</span> again.
       </p>
     </div>
     <p>
@@ -320,20 +322,20 @@
     </p>
     <p>
       To exit edit mode, press
-      <span class="scm_kbm">ENTER, TAB, SHIFT-TAB, ARROW</span> or
-      <span class="scm_kbm">LMOUSE</span> click outside the cell.
+      <span class="scm-kbm">ENTER, TAB, SHIFT-TAB, ARROW</span> or
+      <span class="scm-kbm">LMOUSE</span> click outside the cell.
     </p>
     <p>
       Please note, currently the windows cursor is not tracking correctly in
       this grid, it will be fixed in future releases.
     </p>
 
-    <table class="scm_table_img">
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/Session/Session_IllegalDateDlg.jpg" style="
                 float: left;
@@ -345,7 +347,7 @@
             dialogue appears.
 
             <p>
-              After closing the dialogue, your erronous data entry is ignored
+              After closing the dialogue, your erroneous data entry is ignored
               and the cell reverts.
             </p>
           </td>
@@ -354,13 +356,13 @@
     </table>
 
     <!-- DELETE A SESSION -->
-    <h3 class="scm_h3"><a id="sess_Delete"></a>Delete a session</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3"><a id="sess_Delete"></a>Delete a session</h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/icons/ic_delete.png" style="
                 float: left;
@@ -375,28 +377,28 @@
             <div style="margin-left: 20px">
               <p>
                 👉 Click the
-                <span class="scm_kbm">Delete the current selected session</span>
+                <span class="scm-kbm">Delete the current selected session</span>
                 button.
               </p>
               <p>
                 👉 or hover over the session grid and
-                <span class="scm_kbm">RMOUSE</span> click to use the pop-up
-                menu. Select <span class="scm_mi">Delete Session...</span>.
+                <span class="scm-kbm">RMOUSE</span> click to use the pop-up
+                menu. Select <span class="scm-mi">Delete Session...</span>.
               </p>
               <p>
                 👉 or select a session and then use the keyboard short-cut
-                <span class="scm_kbm">CTRL-DEL</span>.
+                <span class="scm-kbm">CTRL-DEL</span>.
               </p>
             </div>
           </td>
         </tr>
       </tbody>
-      </table><table class="scm_table_img">
+      </table><table class="scm-table_img">
         <colgroup>
           <col/>
         </colgroup>
         <tbody>
-          <tr class="scm_tr_img">
+          <tr class="scm-tr_img">
             <td>
               <img src="../../../assets/images/Session/Session_ConfirmDelete.jpg " style="
                   float: left;
@@ -416,13 +418,13 @@
     
 
     <!-- TOGGLE LOCK UNLOCK -->
-    <h3 class="scm_h3"><a id="sess_LockUnlock"></a>Lock a Session.</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3"><a id="sess_LockUnlock"></a>Lock a Session.</h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/icons/ic_action_lock.png" style="
                 float: left;
@@ -430,29 +432,29 @@
                 margin-right: 10px;
                 cursor: nwse-resize;
               "/>
-            Tomatoe red indicates that a session is locked. Typically, you would
+            Tomato red indicates that a session is locked. Typically, you would
             lock a session after all the events have been raced.
             <p>
               A locked session disables data entry for events, nominations and
               heats. These grids will appear grayed to indicate they are
               read-only. Most buttons for these grids are also grayed. However,
               you can still navigate events and print reports. Locking a session
-              protects your data from accidential entry.
+              protects your data from accidental entry.
             </p>
             <p>To lock, un-lock a session ...</p>
             <div style="margin-left: 20px">
               <p>
-                👉 Click the <span class="scm_mi">lock/unlock</span> button.
+                👉 Click the <span class="scm-mi">lock/unlock</span> button.
               </p>
               <p>
                 👉 or hover over the session grid and
-                <span class="scm_kbm">RMOUSE</span> click to use the pop-up
+                <span class="scm-kbm">RMOUSE</span> click to use the pop-up
                 menu. Select the menu item,
-                <span class="scm_mi">lock/unlock</span>.
+                <span class="scm-mi">lock/unlock</span>.
               </p>
               <p>
                 👉 or select a session and then use the keyboard short-cut
-                <span class="scm_kbm">CTRL-L</span>.
+                <span class="scm-kbm">CTRL-L</span>.
               </p>
             </div>
           </td>
@@ -461,13 +463,15 @@
     </table>
 
     <!-- SESSION VISIBILITY -->
-    <h3 class="scm_h3"><a id="sess_Visibility"></a>Toggle Session Visibility.</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3">
+      <a id="sess_Visibility"></a>Toggle Session Visibility.
+    </h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/icons/ic_action_visibility.png" style="
                 float: left;
@@ -476,17 +480,17 @@
                 cursor: nwse-resize;
               "/>
             To toggle the visibility of
-            <span class="scm_term">closed</span> sessions..
+            <span class="scm-term">closed</span> sessions..
             <div style="margin-left: 20px">
               <p>
                 👉 click the
-                <span class="scm_mi">Toggle Visibility</span> button.
+                <span class="scm-mi">Toggle Visibility</span> button.
               </p>
             </div>
             <p>
               If the visibility button is enabled then all closed sessions will
               be hidden. The button will change appearance when sessions are
-              made invisible. The state of visibilty isn&#39;t remembered on close
+              made invisible. The state of visibility isn&#39;t remembered on close
               of the application.
             </p>
           </td>
@@ -495,13 +499,13 @@
     </table>
 
     <!-- RE-SORT SESSION -->
-    <h3 class="scm_h3"><a id="sess_ReSort"></a>Re-Sort Session.</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3"><a id="sess_ReSort"></a>Re-Sort Session.</h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/icons/ic_autorenew.png" style="
                 float: left;
@@ -516,11 +520,11 @@
     </table>
 
     <div style="margin-left: 20px">
-      <p>👉 click the <span class="scm_mi">Refresh</span> button.</p>
+      <p>👉 click the <span class="scm-mi">Refresh</span> button.</p>
       <p>
         👉 or hover over the session grid and
-        <span class="scm_kbm">RMOUSE</span> click. The pop-up menu will appear,
-        select <span class="scm_mi">Refresh</span>.
+        <span class="scm-kbm">RMOUSE</span> click. The pop-up menu will appear,
+        select <span class="scm-mi">Refresh</span>.
       </p>
     </div>
 
@@ -531,13 +535,13 @@
     </p>
 
     <!-- CLONE SESSION -->
-    <h3 class="scm_h3"><a id="sess_Clone"></a>Clone Session.</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3"><a id="sess_Clone"></a>Clone Session.</h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/Session/Session_CloneDlg.jpg" style="
                 float: left;
@@ -545,38 +549,39 @@
                 margin-right: 10px;
                 cursor: nwse-resize;
               "/>
-            The current selected session is uses to build a duplicate. The clone is
-      given today&#39;s date. It&#39;s assigned a description with the metadata
-      <span class="scm_term">CLONE OF: Club Night #DATETIME#</span>. 
-      <p>Only the
-      events of the original are copied into the clone. (Nomination, Heats,
-      Entrants and Race-Times are ignored).</p>
-      <p>To clone a session ...</p>
-      <div style="margin-left: 20px">
-        <p>
-          👉 Goto the <span class="scm_term">Menu Bar</span> and follow the bread
-          crumbs... <span class="scm_mi">Session ➡ Clone Session...</span>
-        </p>
-        <p>
-          👉 or hover over the session grid and
-          <span class="scm_kbm">RMOUSE</span> click. The pop-up menu will appear,
-          select <span class="scm_mi">Clone Session...</span>.
-        </p>
-      </div>
-  
+            The current selected session is uses to build a duplicate. The clone
+            is given today&#39;s date. It&#39;s assigned a description with the metadata
+            <span class="scm-term">CLONE OF: Club Night #DATETIME#</span>.
+            <p>
+              Only the events of the original are copied into the clone.
+              (Nomination, Heats, Entrants and Race-Times are ignored).
+            </p>
+            <p>To clone a session ...</p>
+            <div style="margin-left: 20px">
+              <p>
+                👉 Goto the <span class="scm-term">Menu Bar</span> and follow
+                the bread crumbs...
+                <span class="scm-mi">Session ➡ Clone Session...</span>
+              </p>
+              <p>
+                👉 or hover over the session grid and
+                <span class="scm-kbm">RMOUSE</span> click. The pop-up menu will
+                appear, select <span class="scm-mi">Clone Session...</span>.
+              </p>
+            </div>
           </td>
         </tr>
       </tbody>
-    </table>    
+    </table>
 
     <!-- REPORT -->
-    <h3 class="scm_h3"><a id="sess_ViewReport"></a>View the Session Report.</h3>
-    <table class="scm_table_img">
+    <h3 class="scm-h3"><a id="sess_ViewReport"></a>View the Session Report.</h3>
+    <table class="scm-table_img">
       <colgroup>
         <col/>
       </colgroup>
       <tbody>
-        <tr class="scm_tr_img">
+        <tr class="scm-tr_img">
           <td>
             <img src="../../../assets/images/icons/ic_credit_card.png" style="
                 float: left;
@@ -593,15 +598,15 @@
     <div style="margin-left: 20px">
       <p>
         👉 Click the
-        <span class="scm_mi">Display a session report</span> button. Using a
-        <span class="scm_kbm">CNTRL+LMOUSE</span> click will display the
+        <span class="scm-mi">Display a session report</span> button. Using a
+        <span class="scm-kbm">CNTRL+LMOUSE</span> click will display the
         alternative version of the session report.
       </p>
       <p>
         👉 Or hover over the session grid and
-        <span class="scm_kbm">RMOUSE</span> click. The popUp menu will appear,
-        select <span class="scm_mi">Session Report*</span>. As above,
-        <span class="scm_kbm">CNTRL+LMOUSE</span> on the menu item was produce
+        <span class="scm-kbm">RMOUSE</span> click. The popUp menu will appear,
+        select <span class="scm-mi">Session Report*</span>. As above,
+        <span class="scm-kbm">CNTRL+LMOUSE</span> on the menu item was produce
         the alternative version of the report.
       </p>
     </div>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "..";
+    gCommonRootRelPath = "..";
+    gTopicId = "0_3";
+  
+//]]></script>
+
+  <script type="text/javascript" src="../template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="../template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="../whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="../template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../template/Charcoal_Grey/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="Adobe RoboHelp 2020"/>
+    <title>BMAC_Login</title>
+    <meta name="topic-status" content="Draft"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/default.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/scm.css"/>
+    <meta name="template" content="../../assets/masterpages/SCM.htt"/>
+  </head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="BMAC_Login">
+        <span>BMAC_Login</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+    <h2 class="scm-h2">SCM_BuildMeAClub - Login.</h2>
+    <div>
+      <p>
+        <img class="scm-img" src="../assets/images/BMAC/BMAC_Login.png" style="width: 100%; max-width: 500px"/>SQLEXPRESS comes with the default Windows Authentication mode when you
+        first install it locally. With the Windows authentication mode,
+        SQLEXPRESS can validate a user by their Windows username and password.
+        This means the password is not required once the user is logged into the
+        Windows system.
+      </p>
+      <p>
+        The alternative method, the SQLEXPRESS authentication mode enables a
+        user login (which is different from a Windows login). To use SQLEXPRESS
+        authentication mode you must give a user name and password. The
+        SwimClubMeet database has a pre-installed user and schema, scmAdmin. Some
+        additional security setup at the root level is required before scmAdmin
+        can be used.
+      </p>
+      <p>
+        Also pre-installed are the roles, SCM_Administrator, SCM_Marshal and
+        SCM_Guest. These roles have special permission mappings on all the
+        SwimClubMeet tables. For example the role, SCM_Guest can only read
+        SwimClubMeet tables.
+      </p>
+    </div>
+    <hr/>
+    <div style="display: inline-block">
+      <h3 class="scm-h3">Examples of Server IP or Named Path.:</h3>
+      <p>192.168.0.1:1433</p>
+      <p>The above example uses an IP address and port number</p>
+      <p>localHost\SQLEXPRESS</p>
+      <p>
+        In this example the &#39;localhost&#39; is a hostname that refers to the local
+        machine currently making the request. On many computers, localhost is an
+        alias for the IP address 127.0.0.1. When a computer pings this IP
+        address, it is communicating with itself. The SQLEXPRESS after the
+        backslash refers to the registered server name or instance of the SQL
+        database server.
+      </p>
+      <p>MyComuterName\SQLEXPRESS</p>
+      <p>
+        The above example uses a computer name and server instance name. A
+        computer name is a unique identifier that is given to each computer. A
+        computer name can be used to identify the computer on a domain or
+        network.
+      </p>
+      <p></p>
+    </div>
+  
+
+</body></html>

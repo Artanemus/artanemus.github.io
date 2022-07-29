@@ -1,1 +1,1 @@
-(function() {    var toc =  [{"name":"assets","type":"book","tilePath":"","key":"toc1"},{"name":"SCM BuildMeAClub","type":"book","tilePath":"","key":"toc3"},{"name":"SCM SwimClubMeet","type":"book","tilePath":"","key":"toc5"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
+(function() {    var toc =  [{"name":"SCM SwimClubMeet","type":"book","tilePath":"assets/images/icons/SCM_Help.ico","key":"toc1"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
