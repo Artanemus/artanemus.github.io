@@ -5,6 +5,31 @@ body {
   background-color: #ffffff;
 }
 
+@font-face {
+  font-family: FiraCode-Medium;
+  src: url("FiraCode-Medium.ttf");
+}
+@font-face {
+  font-family: FiraCode-Bold;
+  src: url("FiraCode-Bold.ttf");
+}
+@font-face {
+  font-family: FiraCode-Light;
+  src: url("FiraCode-Light.ttf");
+}
+@font-face {
+  font-family: FiraCode-Regular;
+  src: url("FiraCode-Regular.ttf");
+}
+@font-face {
+  font-family: FiraCode-Retina;
+  src: url("FiraCode-Retina.ttf");
+}
+@font-face {
+  font-family: FiraCode-SemiBold;
+  src: url("FiraCode-SemiBold.ttf");
+}
+
 h1 {
   font-weight: bold;
   font-size: 24pt;

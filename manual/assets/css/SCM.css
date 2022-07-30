@@ -26,7 +26,7 @@ body {
 }
 
 h2,h3,h4,table {
-  font-family: "Fira Code", monospace;
+  font-family: "FiraCode-Regular", monospace;
 }
 
 
@@ -49,7 +49,7 @@ h2.scm-h2 {
   border-left: 0;
   border-right: 0;
   padding: 10px 10px 10px 10px;
-  font-family: "Fira Code";
+  font-family: "FiraCode-Regular";
 }
 
 h3.scm-h3 {
@@ -69,7 +69,7 @@ h3.scm-h3 {
   margin-top: 30px;
   margin-bottom: 10px;
   width: 60%;
-  font-family: "Fira Code Light";
+  font-family: "FiraCode-Light", monospace;
   font-style: italic;
 }
 
@@ -81,7 +81,7 @@ h4.scm-h4 {
   line-height: 1;
   margin-left: 16px;
   margin-bottom: 5px;
-  font-family: "Fira Code Light";
+  font-family: "FiraCode-Light", monospace;
 }
 
 span.scm-kbm {
@@ -93,12 +93,12 @@ span.scm-kbm {
   padding-left: 4px;
   padding-right: 4px;
   font-style: italic;
-  font-family: "Fira Code";
+  font-family: "FiraCode-Regular";
 }
 
 span.scm-quote {
   font-style: italic;
-  font-family: "Fira Code";
+  font-family: "FiraCode-Regular";
   border-width: 0px;
   border-style: none;
   border-color: #000000;
@@ -110,7 +110,7 @@ span.scm-quote {
 
 span.scm-mi {
   font-style: italic;
-  font-family: "Fira Code";
+  font-family: "FiraCode-Regular";
   border-width: 0px;
   border-style: none;
   border-color: #000000;
@@ -122,7 +122,7 @@ span.scm-mi {
 
 span.scm-term {
   font-style: italic;
-  font-family: "Fira Code";
+  font-family: "FiraCode-Regular";
   border-width: 0px;
   border-style: none;
   border-color: #000000;
@@ -147,7 +147,7 @@ img.scm-img {
 }
 
 table.scm-table_idx {
-  font-family: "Fira Code";
+  font-family: "FiraCode-Regular";
   break-after: always;
   border-width: 0px;
   border-style: none;
@@ -161,7 +161,7 @@ table.scm-table_idx {
 }
 
 div.scm-div_hint {
-  font-family: "Fira Code Light";
+  font-family: "FiraCode-Light";
   color: #323232;
   font-style: italic;
   letter-spacing: 1px;
@@ -180,7 +180,7 @@ div.scm-div_hint {
 div.scm-div_note {
   color: #323232;
   font-style: italic;
-  font-family: "Fira Code Light";
+  font-family: "FiraCode-Light";
   margin-top: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
