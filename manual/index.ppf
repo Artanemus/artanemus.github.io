@@ -6,55 +6,31 @@
   <topiclist defaulttopic="SCM_SwimClubMeet\Home.htm">
     
     <topic>
-      assets\snippets_SCM\SCM_BoilerPlate.html
+      SCM_SwimClubMeet\Home.htm
     </topic>
     
     <topic>
-      assets\snippets_SCM\SCM_Center.html
+      SCM_SwimClubMeet\StartHere\StartHere.htm
     </topic>
     
     <topic>
-      assets\snippets_SCM\SCM_Finger.html
+      SCM_SwimClubMeet\StartHere\SysRequirements.htm
     </topic>
     
     <topic>
-      assets\snippets_SCM\SCM_Hint.html
+      SCM_SwimClubMeet\StartHere\Installation.htm
     </topic>
     
     <topic>
-      assets\snippets_SCM\SCM_Info.html
+      SCM_SwimClubMeet\StartHere\MyFirstClubNight.htm
     </topic>
     
     <topic>
-      assets\snippets_SCM\SCM_keywords.html
+      SCM_SwimClubMeet\StartHere\BackupYourData.htm
     </topic>
     
     <topic>
-      assets\snippets_SCM\SCM_PoolProcedure.html
-    </topic>
-    
-    <topic>
-      assets\snippets_SCM\SCM_PrevNext.html
-    </topic>
-    
-    <topic>
-      assets\snippets_SCM\SCM_Table.html
-    </topic>
-    
-    <topic>
-      assets\snippets_SCM\SCM_TableImageText.html
-    </topic>
-    
-    <topic>
-      SCM_BuildMeAClub\BMAC_Details.htm
-    </topic>
-    
-    <topic>
-      SCM_BuildMeAClub\BMAC_Home.htm
-    </topic>
-    
-    <topic>
-      SCM_BuildMeAClub\BMAC_Login.htm
+      SCM_SwimClubMeet\StartHere\LearnMore.htm
     </topic>
     
     <topic>
@@ -62,15 +38,39 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Bar\Header_Bar.htm
+      SCM_SwimClubMeet\Interface\Session\Event_Buttons.htm
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Bar\Menu_Bar.htm
+      SCM_SwimClubMeet\Interface\Session\Event_Grid.htm
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Bar\Status_Bar.htm
+      SCM_SwimClubMeet\Interface\Session\Session_Buttons.Htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Session\Session_CreateDlg.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Session\Session_Grid.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Session\Session_idx.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Nominate\Nom_Events_List.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Nominate\Nom_Member_List.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Interface\Nominate\Nominate_idx.htm
     </topic>
     
     <topic>
@@ -110,39 +110,15 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Nominate\Nom_Events_List.htm
+      SCM_SwimClubMeet\Interface\Bar\Header_Bar.htm
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Nominate\Nom_Member_List.htm
+      SCM_SwimClubMeet\Interface\Bar\Menu_Bar.htm
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Nominate\Nominate_idx.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Session\Event_Buttons.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Session\Event_Grid.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Session\Session_Buttons.Htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Session\Session_CreateDlg.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Session\Session_Grid.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Session\Session_idx.htm
+      SCM_SwimClubMeet\Interface\Bar\Status_Bar.htm
     </topic>
     
     <topic>
@@ -150,27 +126,7 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Members\Mem_Buttons.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Members\Mem_Chart.htm
-    </topic>
-    
-    <topic>
       SCM_SwimClubMeet\Members\Mem_Details.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Members\Mem_Find.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Members\Mem_Goto.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Members\Mem_History.htm
     </topic>
     
     <topic>
@@ -178,11 +134,31 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Members\Mem_Navigator.htm
+      SCM_SwimClubMeet\Members\Mem_History.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Members\Mem_Chart.htm
     </topic>
     
     <topic>
       SCM_SwimClubMeet\Members\Mem_Report.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Members\Mem_Find.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Members\Mem_Buttons.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Members\Mem_Goto.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Members\Mem_Navigator.htm
     </topic>
     
     <topic>
@@ -238,87 +214,23 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\StartHere\BackupYourData.htm
+      SCM_SwimClubMeet\Tools\Tools_idx.htm
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\StartHere\Installation.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\StartHere\LearnMore.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\StartHere\MyFirstClubNight.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\StartHere\StartHere.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\StartHere\SysRequirements.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Application_List.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Color_Ledger.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Connecting_SCM.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Connection_Overview.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Grid_Editing.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\How_seeding_works.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\HowToUseSearch.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Keyboard_shortcuts.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\KickStartTTB.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Pool_Protocol.html
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\System_idx.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\TTB_How_it_works.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\System\Version_Info.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Tools\Tool_Options\Opt_AutoBuild.htm
+      SCM_SwimClubMeet\Tools\Tool_Options\Options_idx.htm
     </topic>
     
     <topic>
       SCM_SwimClubMeet\Tools\Tool_Options\Opt_Club.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Tools\Tool_Options\Opt_TTB.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\Tools\Tool_Options\Opt_AutoBuild.htm
     </topic>
     
     <topic>
@@ -327,14 +239,6 @@
     
     <topic>
       SCM_SwimClubMeet\Tools\Tool_Options\Opt_System.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Tools\Tool_Options\Opt_TTB.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Tools\Tool_Options\Options_idx.htm
     </topic>
     
     <topic>
@@ -354,11 +258,55 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Tools\Tools_idx.htm
+      SCM_SwimClubMeet\System\System_idx.htm
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Home.htm
+      SCM_SwimClubMeet\System\Grid_Editing.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\How_seeding_works.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Pool_Protocol.html
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\TTB_How_it_works.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\KickStartTTB.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\HowToUseSearch.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Keyboard_shortcuts.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Connection_Overview.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Connecting_SCM.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Version_Info.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Application_List.htm
+    </topic>
+    
+    <topic>
+      SCM_SwimClubMeet\System\Color_Ledger.htm
     </topic>
     
   </topiclist>
@@ -381,7 +329,7 @@
         
     <filenameentry moniker="favicon">
       <filename>
-        C:/Users/Ben/Documents/GitHub/SCM_RoboHelp/PROJECT/contents/assets/images/icons/SCM_Help.ico
+        C:/Users/Ben/Documents/GitHub/SCM_RoboHelp/PROJECT/contents/assets/SwimClubMeet.ico
       </filename>
     </filenameentry>
     

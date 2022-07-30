@@ -1,1 +1,1 @@
-(function() {    var toc =  [{"name":"SCM SwimClubMeet","type":"book","tilePath":"assets/images/icons/SCM_Help.ico","key":"toc1"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
+(function() {    var toc =  [{"name":"SwimClubMeet Manual","type":"book","tilePath":"assets/SwimClubMeet.ico","description":"SwimClubMeet home page.","url":"SCM_SwimClubMeet/Home.htm","key":"toc1"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

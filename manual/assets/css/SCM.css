@@ -1,7 +1,12 @@
 
 /* introduces fira code ... default.css ... and header entry
 
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&amp;display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+    />
 
 */
 
@@ -13,6 +18,17 @@
 } */
 
 /* GOOGLE ICONS  style */
+
+body {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  background-color: #ffffff;
+}
+
+h2,h3,h4,table {
+  font-family: "Fira Code", monospace;
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -128,7 +144,6 @@ img.scm-img {
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  font-family: "Fira Code";
 }
 
 table.scm-table_idx {
