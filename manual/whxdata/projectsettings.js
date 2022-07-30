@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("SCM_SwimClubMeet/Home.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '4ec2b96c-148d-4b1c-8d76-ce2eae0ace50' || 'preview');
+rh.consts('HELP_ID', 'be6a8cef-39e2-4087-a89d-33c95ce860e5' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

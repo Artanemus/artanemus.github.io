@@ -1,42 +1,7 @@
 
-/* introduces fira code ... default.css ... and header entry
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
-    />
-
-*/
-
-/* body { 
-  font-family: 'Segoe UI', 'Fira Code'; 
-  font-size: large;
-  background-color: #ffffff;
-
-} */
-
-/* GOOGLE ICONS  style */
-
-body {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: large;
-  background-color: #ffffff;
-}
-
-h2,h3,h4,table {
-  font-family: "FiraCode-Regular", monospace;
-}
 
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
+
 
 
 

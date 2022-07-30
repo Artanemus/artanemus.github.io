@@ -1,9 +1,4 @@
 /*Created with Adobe RoboHelp 2019.*/
-body {
-  font-family: 'Segoe UI', 'Fira Code', Tahoma, Geneva, Verdana, sans-serif ;
-  font-size: large;
-  background-color: #ffffff;
-}
 
 @font-face {
   font-family: FiraCode-Medium;
@@ -30,46 +25,31 @@ body {
   src: url("FiraCode-SemiBold.ttf");
 }
 
+/* adobe icons */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+body {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  background-color: #ffffff;
+}
+
+h2,h3,h4,table {
+  font-family: "FiraCode-Regular", monospace;
+}
+
 h1 {
   font-weight: bold;
   font-size: 24pt;
 }
 
-/* h2 {} */
-
-/* h3 {} */
-
-/*
-h4 {
-  font-weight: bold;
-  border-width: 0px;
-  border-style: none;
-  border-color: #000000;
-  line-height: 1;
-  border-left-width: 0px;
-  border-left-style: none;
-  border-left-color: #000000;
-  border-top-width: 0px;
-  border-top-style: none;
-  border-top-color: #000000;
-  border-right-width: 0px;
-  border-right-style: none;
-  border-right-color: #000000;
-  border-bottom-width: 0px;
-  border-bottom-style: none;
-  border-bottom-color: #000000;
-}
-
-h5 {
-  font-weight: bold;
-  font-size: 10pt;
-}
-
-h6 {
-  font-weight: bold;
-  font-size: 8pt;
-}
-*/
 
 p {
   text-align: left;
@@ -111,306 +91,237 @@ span.glosstext {
   color: #0000ff;
 }
 
-/* ol, */
-/* ul {} */
-
-/*
-ol.Decimal {
-  list-style-type: decimal;
-  counter-reset: item1;
-  list-style: none;
-}
-
-ul.Disc {
-  list-style-type: disc;
-}
-
-ol.RoundSquare {
-  list-style-type: none;
-  counter-reset: item1;
-  padding: 0;
-  margin: 0;
-}
-
-ol.RoundSquare li {
-  display: table;
-}
-
-ol.RoundSquare li:before {
-  text-align: right;
-  display: table-cell;
-  padding-right: 0.5rem;
-}
-
-ol.RoundSquare ol {
-  list-style-type: none;
-  counter-reset: item;
-  padding: 0;
-  margin: 0;
-}
-
-ol.RoundSquare ol>li:before {
-  counter-increment: item;
-  content: counter(item) ".";
-}
-
-ol.RoundSquare>li:before {
-  counter-increment: item1;
-  content: counter(item1, disc);
-}
-
-ol.RoundSquare>li>ol {
-  counter-reset: item2;
-}
-
-ol.RoundSquare>li>ol>li:before {
-  counter-increment: item2;
-  content: counter(item2, square);
-}
-
-ol.RoundSquare>li>ol>li>ol {
-  counter-reset: item3;
-}
-
-ol.RoundSquare>li>ol>li>ol>li:before {
-  counter-increment: item3;
-  content: counter(item3, circle);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol {
-  counter-reset: item4;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item4;
-  content: counter(item4, disc);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
-  counter-reset: item5;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item5;
-  content: counter(item5, square);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
-  counter-reset: item6;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item6;
-  content: counter(item6, circle);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  counter-reset: item7;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item7;
-  content: counter(item7, disc);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  counter-reset: item8;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item8;
-  content: counter(item8, square);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  counter-reset: item9;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item9;
-  content: counter(item9, circle);
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol {
-  counter-reset: item10;
-}
-
-ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
-  counter-increment: item10;
-  content: counter(item10, disc);
-}
-ol {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  --prefix-size: 40px;
-  --prefix-fixed-size: false;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 8px;
-  counter-reset: item1;
-  list-style: none;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-
-ul>li {
-  --prefix-size: 40px;
-  --prefix-fixed-size: false;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 8px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
 
 
-
-ul>li:before {
-  counter-increment: item1;
-  content: counter(item1, disc);
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-  line-height: 1;
-}
-
-
-ol.Decimal>li {
-  --prefix-size: 40px;
-  --prefix-fixed-size: false;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 32px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-
-ol.Decimal>li:before {
-  counter-increment: item1;
-  content: counter(item1, decimal) " •";
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  width: var(--prefix-size);
-  overflow: hidden;
-  margin-right: var(--prefix-gap);
-}
-
-ol.Decimal>li>ol {
-  --prefix-size: 40px;
-  --prefix-fixed-size: false;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 0px;
-  counter-reset: item2;
-  list-style: none;
-  padding-left: var(--prefix-size);
-  margin-left: calc(var(--list-indent) - var(--prefix-size));
-}
-
-ol.Decimal>li>ol>li {
-  --prefix-size: 40px;
-  --prefix-fixed-size: false;
-  --prefix-gap: 4px;
-  --list-indent: 40px;
-  --vertical-spacing: 0px;
-  position: relative;
-  margin-top: calc(var(--vertical-spacing) / 2);
-  margin-bottom: calc(var(--vertical-spacing) / 2);
-}
-
-ol.Decimal>li>ol>li:before {
-  counter-increment: item2;
-  content: counter(item2, decimal);
-  text-align: right;
-  position: absolute;
-  left: calc(-1 * var(--prefix-size) - var(--prefix-gap));
-  margin-right: var(--prefix-gap);
-  width: var(--prefix-size);
-  overflow: hidden;
-}
-
-*/
-
-table.thickhdrevenrows {
-  border-collapse: collapse;
-}
-
-table.thickhdrevenrows tr:first-child {
-  border-width: 3px;
+h2.scm-h2 {
+  /* font-size: 16pt; */
+  border-width: 1px;
   border-style: solid;
-  border-color: #666666;
+  border-color: #f5bd98;
+  background-color: #ff8e77;
   border-left: 0;
-  border-top: 0;
   border-right: 0;
+  padding: 10px 10px 10px 10px;
+  font-family: "FiraCode-Regular";
 }
 
-table.thickhdrevenrows td {
+h3.scm-h3 {
+  /* font-size: larger; */
+  line-height: 1;
+  background-color: rgba(180, 180, 0, 0.2);
   border-width: 1px;
-  border-style: solid;
-  border-color: #666666;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  border-style: none;
+  border-color: #000000;
+  border-left: 0;
+  border-right: 0;
+  background-size: 0px 0px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 60%;
+  font-family: "FiraCode-Light", monospace;
+  font-style: italic;
+}
+
+h4.scm-h4 {
+  font-size: 100%;
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  line-height: 1;
+  margin-left: 16px;
+  margin-bottom: 5px;
+  font-family: "FiraCode-Light", monospace;
+}
+
+span.scm-kbm {
+  color: #000000;
+  text-align: left;
+  /* text-transform: uppercase; */
+  background-color: rgba(255, 66, 79, 0.23);
+  text-decoration: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-style: italic;
+  font-family: "FiraCode-Regular";
+}
+
+span.scm-quote {
+  font-style: italic;
+  font-family: "FiraCode-Regular";
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  /* font-size: %; */
+  background-color: rgba(180, 180, 0, 0.2);
   padding-left: 4px;
   padding-right: 4px;
 }
 
-table.thickhdrevenrows tr:nth-child(even) td {
-  background-color: rgba(102, 102, 102, 0.5);
+span.scm-mi {
+  font-style: italic;
+  font-family: "FiraCode-Regular";
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  /* font-size: %; */
+  background-color: rgba(200, 200, 255, 0.35);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-table.thickhdrevenrows tr:first-child td {
-  text-align: center;
+span.scm-term {
+  font-style: italic;
+  font-family: "FiraCode-Regular";
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
+  /* font-size: %; */
+  background-color: rgba(255, 71, 255, 0.19);
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-table.hdrevenrows {
+img.scm-img {
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+  text-align: left;
+  /* text-wrap: left; */
+  float: left;
+  margin: 0px 10px 0px 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+table.scm-table_idx {
+  font-family: "FiraCode-Regular";
+  break-after: always;
+  border-width: 0px;
+  border-style: none;
+  border-color: transparent;
+  width: 80%;
   border-collapse: collapse;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-table.hdrevenrows td {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(237, 125, 49, 0.5);
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
+div.scm-div_hint {
+  font-family: "FiraCode-Light";
+  color: #323232;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  background-color: rgba(197, 197, 0, 0.13);
+  font-size: 85%;
 }
 
-table.hdrevenrows tr:first-child td {
-  background-color: #ed7d31;
-  color: #ffffff;
+div.scm-div_note {
+  color: #323232;
+  font-style: italic;
+  font-family: "FiraCode-Light";
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgba(175, 170, 0, 0.12);
+  height: 10px;
+  width: 70%;
 }
 
-table.hdrevenrows tr:nth-child(even) td {
-  background-color: rgba(237, 125, 49, 0.25);
-}
-
-table.evenrows {
+table.scm-table_img {
   border-collapse: collapse;
+  width: 90%;
+  border-width: 0px;
+  border-style: none;
+  border-color: rgb(0, 0, 0);
+  font-family: "Segoe UI";
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
 }
 
-table.evenrows td {
-  padding-top: 2px;
-  padding-right: 4px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #bfbfbf;
+tr.scm-tr_img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 60%;
+  border-width: 0px;
+  border-style: none;
+  border-color: #000000;
 }
 
-table.evenrows tr:nth-child(even) td {
-  background-color: rgba(191, 191, 191, 0.5);
+/* these 2xtable_data styles are for SCM grid descriptions */
+td.scm-c1 {
+  max-width: 25px;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+td.scm-c2 {
+  max-width: 50px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* Used to display NEXT/PREV across top of form */
+
+a.scm-a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: cornflowerblue;
+  padding: 7px 10px;
+  border-radius: 4px;
+  font-size: 19px;
+}
+a.scm-a:hover {
+  background-color: rgba(100, 149, 237, 85%);
+}
+a.scm-a:focus {
+  outline: 3px solid rgb(100, 149, 237 / 50%);
+}
+div.scm-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* CUSTOM FINGER LIST */
+
+ul.scm-ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* Line spacing for list item */
+ul.scm-ul li.scm-ul {
+  margin-bottom: 8px;
+}
+/* Finger pointer */
+ul.scm-ul li.scm-ul:before {
+  content: "👉🏻 ";
+
 }
 
