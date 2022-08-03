@@ -91,9 +91,57 @@ span.glosstext {
   color: #0000ff;
 }
 
+/* DIV SECTION */
+.container {
+  display: flex;
+  justify-content: center;
+  /* width: 90%; */
+  /* margin: 0, auto; */
+}
+
+.scm-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
 
 
-h2.scm-h2 {
+.scm-div_hint {
+  font-family: "FiraCode-Light";
+  color: #323232;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  background-color: rgba(197, 197, 0, 0.13);
+  font-size: 85%;
+}
+
+.scm-div_note {
+  color: #323232;
+  font-style: italic;
+  font-family: "FiraCode-Light";
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgba(175, 170, 0, 0.12);
+  height: 10px;
+  width: 70%;
+}
+
+
+.scm-h2 {
   /* font-size: 16pt; */
   border-width: 1px;
   border-style: solid;
@@ -105,7 +153,7 @@ h2.scm-h2 {
   font-family: "FiraCode-Regular";
 }
 
-h3.scm-h3 {
+.scm-h3 {
   /* font-size: larger; */
   line-height: 1;
   background-color: rgba(180, 180, 0, 0.2);
@@ -126,7 +174,7 @@ h3.scm-h3 {
   font-style: italic;
 }
 
-h4.scm-h4 {
+.scm-h4 {
   font-size: 100%;
   border-width: 0px;
   border-style: none;
@@ -137,19 +185,20 @@ h4.scm-h4 {
   font-family: "FiraCode-Light", monospace;
 }
 
-span.scm-kbm {
+.scm-kbm {
   color: #000000;
   text-align: left;
   /* text-transform: uppercase; */
   background-color: rgba(255, 66, 79, 0.23);
   text-decoration: none;
+  text-transform: uppercase;
   padding-left: 4px;
   padding-right: 4px;
   font-style: italic;
   font-family: "FiraCode-Regular";
 }
 
-span.scm-quote {
+.scm-quote {
   font-style: italic;
   font-family: "FiraCode-Regular";
   border-width: 0px;
@@ -161,7 +210,7 @@ span.scm-quote {
   padding-right: 4px;
 }
 
-span.scm-mi {
+.scm-mi {
   font-style: italic;
   font-family: "FiraCode-Regular";
   border-width: 0px;
@@ -173,9 +222,10 @@ span.scm-mi {
   padding-right: 4px;
 }
 
-span.scm-term {
+.scm-term {
   font-style: italic;
   font-family: "FiraCode-Regular";
+  text-transform: capitalize;
   border-width: 0px;
   border-style: none;
   border-color: #000000;
@@ -199,7 +249,7 @@ img.scm-img {
   padding-left: 10px;
 }
 
-table.scm-table_idx {
+.scm-table_idx {
   font-family: "FiraCode-Regular";
   break-after: always;
   border-width: 0px;
@@ -213,41 +263,8 @@ table.scm-table_idx {
   margin-left: 20px;
 }
 
-div.scm-div_hint {
-  font-family: "FiraCode-Light";
-  color: #323232;
-  font-style: italic;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  padding-top: 1px;
-  padding-right: 10px;
-  padding-bottom: 1px;
-  padding-left: 10px;
-  background-color: rgba(197, 197, 0, 0.13);
-  font-size: 85%;
-}
 
-div.scm-div_note {
-  color: #323232;
-  font-style: italic;
-  font-family: "FiraCode-Light";
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  background-color: rgba(175, 170, 0, 0.12);
-  height: 10px;
-  width: 70%;
-}
-
-table.scm-table_img {
+.scm-table_img {
   border-collapse: collapse;
   width: 90%;
   border-width: 0px;
@@ -261,7 +278,7 @@ table.scm-table_img {
   padding-left: 20px;
 }
 
-tr.scm-tr_img {
+.scm-tr_img {
   margin-left: 10px;
   margin-right: 10px;
   width: 60%;
@@ -271,7 +288,7 @@ tr.scm-tr_img {
 }
 
 /* these 2xtable_data styles are for SCM grid descriptions */
-td.scm-c1 {
+.scm-c1 {
   max-width: 25px;
   text-align: right;
   padding-right: 10px;
@@ -279,7 +296,7 @@ td.scm-c1 {
   vertical-align: top;
 }
 
-td.scm-c2 {
+.scm-c2 {
   max-width: 50px;
   text-align: left;
   padding-left: 10px;
@@ -288,7 +305,7 @@ td.scm-c2 {
 
 /* Used to display NEXT/PREV across top of form */
 
-a.scm-a {
+.scm-a {
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -297,30 +314,25 @@ a.scm-a {
   border-radius: 4px;
   font-size: 19px;
 }
-a.scm-a:hover {
+.scm-a:hover {
   background-color: rgba(100, 149, 237, 85%);
 }
-a.scm-a:focus {
+.scm-a:focus {
   outline: 3px solid rgb(100, 149, 237 / 50%);
-}
-div.scm-flex {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
 }
 
 /* CUSTOM FINGER LIST */
 
-ul.scm-ul {
+.scm-ul {
   list-style-type: none;
   padding: 0;
 }
 /* Line spacing for list item */
-ul.scm-ul li.scm-ul {
+.scm-ul li.scm-ul {
   margin-bottom: 8px;
 }
 /* Finger pointer */
-ul.scm-ul li.scm-ul:before {
+.scm-ul li.scm-ul:before {
   content: "👉🏻 ";
 
 }
