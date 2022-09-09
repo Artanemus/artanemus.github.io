@@ -38,6 +38,10 @@
     </topic>
     
     <topic>
+      SCM_SwimClubMeet\Interface\Session\Session_idx.htm
+    </topic>
+    
+    <topic>
       SCM_SwimClubMeet\Interface\Session\Event_Buttons.htm
     </topic>
     
@@ -58,7 +62,7 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Session\Session_idx.htm
+      SCM_SwimClubMeet\Interface\Nominate\Nominate_idx.htm
     </topic>
     
     <topic>
@@ -70,7 +74,7 @@
     </topic>
     
     <topic>
-      SCM_SwimClubMeet\Interface\Nominate\Nominate_idx.htm
+      SCM_SwimClubMeet\Interface\Heats\Heat_idx.htm
     </topic>
     
     <topic>
@@ -83,10 +87,6 @@
     
     <topic>
       SCM_SwimClubMeet\Interface\Heats\Heat_Grid.htm
-    </topic>
-    
-    <topic>
-      SCM_SwimClubMeet\Interface\Heats\Heat_idx.htm
     </topic>
     
     <topic>
